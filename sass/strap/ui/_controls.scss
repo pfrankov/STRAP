@@ -1,0 +1,16 @@
+@import "../strap-lib/ui/controls";
+
+
+/* [Nano], Tiny (up to 16px of height), Small (24px), Medium (32px), Large (64px), [Huge] */
+
+.Control {
+	//@include sprite-folder("controls");
+
+	&.Nano {
+		//@include sprite-file("<file-without-extension>");
+	}
+	&.Tiny {
+
+	}
+
+}

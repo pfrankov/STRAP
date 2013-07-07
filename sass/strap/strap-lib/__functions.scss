@@ -1,0 +1,79 @@
+@import "functions/__math";
+@import "functions/__units";
+@import "functions/__grid";
+
+
+// +public
+@function closest-color( $reference-color, $colors) {
+
+	// Firstly remove reference color from color list if it was presented there
+	$new-colors: ();
+
+	@each $color in $colors {
+		@if ( $color != $reference-color ) {
+			$new-colors: append($new-colors, $color);
+		}
+	}
+
+	$best-similarity: 0;
+	$best-color: 0;
+
+	@each $color in $new-colors {
+		$similarity: 0;
+
+		@for $i from 1 through 3 {
+			$max: 0;
+			$min: 0;
+
+			@if ( $i == 1 ) {
+				$max: max(red($reference-color), red($color));
+				$min: min(red($reference-color), red($color));
+			}
+			@if ( $i == 2 ) {
+				$max: max(green($reference-color), green($color));
+				$min: min(green($reference-color), green($color));
+			}
+			@if ( $i == 3 ) {
+				$max: max(blue($reference-color), blue($color));
+				$min: min(blue($reference-color), blue($color));
+			}
+
+
+			@if ( $max == 0 ) {
+				$max: 1;
+			}
+
+			$similarity: $similarity + $min/$max*100;
+		}
+
+		@if ( $similarity > $best-similarity ) {
+			$best-similarity: $similarity;
+			$best-color: $color;
+		}
+	}
+
+	@return $best-color;
+}
+
+// +public
+@function shadow-steps($x-offset-multiplier: 1, $y-offset-multiplier: 1, $color: #000, $size: 0, $depth: 1, $inset:false, $additional-shadows-list: ()) {
+	$shadows-list: ();
+
+	$depth: remove-units($depth);
+	$x-offset-multiplier: remove-units($x-offset-multiplier);
+	$y-offset-multiplier: remove-units($y-offset-multiplier);
+
+	@if ( $inset ) {
+		$inset: inset;
+	}
+	@else {
+		$inset: unquote("");
+	}
+	@for $i from 1 through $depth {
+		$shadow: ($inset $i * $x-offset-multiplier *1px $i * $y-offset-multiplier *1px $size * 1px $color );
+
+		$shadows-list: append($shadows-list, $shadow, comma);
+	}
+
+	@return append($shadows-list, $additional-shadows-list, comma);
+}

@@ -1,0 +1,42 @@
+@import "mixins/__animations";
+@import "mixins/__grid";
+@import "mixins/__typography";
+@import "mixins/__sprites";
+
+
+// +public
+@mixin link-style ($color:$LINK_COLOR, $hover-color: $LINK_HOVER_COLOR, $active-color: $LINK_ACTIVE_COLOR) {
+	@include link-colors ($color, $hover-color, $active-color);
+}
+
+// +public
+@mixin unselectable {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+
+// +public
+@mixin clearfix {
+	zoom: 1;
+
+	&:after {
+		clear: both;
+		content: "";
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+}
+
+// +public
+@mixin filter-gradient-fix {
+	&:not([ie]) {
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled='false');
+	}
+}
+
+

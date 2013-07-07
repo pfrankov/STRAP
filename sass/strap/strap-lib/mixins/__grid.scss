@@ -1,0 +1,38 @@
+// +public
+@mixin breakpoint($point1, $point2: false) {
+
+	@if ( (type-of($point1) == list) or (type-of($point1) == string) ) {
+
+		@if ($point2) {
+			@include _fixed-breakpoint(_previous-breakpoint-by-name($point1), _breakpoint-by-name($point2)) {
+				@content;
+			}
+		}@else {
+			@include _fixed-breakpoint(_breakpoint-by-name($point1)) {
+				@content;
+			}
+		}
+	} @else {
+		@include _fixed-breakpoint($point1) {
+			@content;
+		}
+	}
+}
+
+// -private
+@mixin _fixed-breakpoint ($point1, $point2: false) {
+
+	@if ($point2 and unit($point2) == "px") {
+		$point2: $point2 - 1px;
+	}
+
+	@if ($point2) {
+		@media only screen and (min-width: $point1) and (max-width: $point2) {
+			@content;
+		}
+	}@else {
+		@media only screen and (max-width: $point1) {
+			@content;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+table.Table {
+	width: 100%;
+	border-collapse: separate;
+
+	margin: {
+		top: line(1);
+		bottom: line(1);
+	}
+
+	thead,
+	tbody {
+		padding: {
+			left: gutter(0.5);
+			right: gutter(0.5);
+		}
+	}
+
+	th,
+	td {
+		padding: line(0.5) gutter(0.5);
+
+		&.Center {
+			text-align: center;
+		}
+		&.Left {
+			text-align: left;
+		}
+		&.Right {
+			text-align: right;
+		}
+	}
+
+	th {
+		@include font-size(1.2rem);
+	}
+
+	td {
+		vertical-align: baseline;
+
+	}
+
+	&.Bordered {
+		//border: 1px solid #ddd;
+
+		td {
+
+		}
+	}
+
+}

@@ -1,0 +1,64 @@
+// Headings
+
+@include all-headers {
+	font-family: $HEADER_FONT_FAMILY;
+	font-weight: bold;
+	//text-rendering: optimizelegibility;
+
+	@include text-margins;
+}
+h1 {
+	@include heading(3, 2, $H1_FONT_SIZE);
+}
+h2 {
+	@include heading(2, 1, $H2_FONT_SIZE);
+}
+h3 {
+	@include heading(1.5, 0.5, $H3_FONT_SIZE);
+}
+h4 {
+	@include heading(1, 0.5, $H4_FONT_SIZE);
+}
+h5 {
+	@include heading(1, 0.5, $H5_FONT_SIZE);
+}
+h6 {
+	@include heading(1, 0.5, $H6_FONT_SIZE);
+}
+
+
+p,
+small,
+ol,
+li,
+ul {
+	@include text-margins;
+
+	&:first-child {
+		margin-top: 0;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+
+p {
+	line-height: line(1);
+	margin: line(0.5) 0;
+}
+small {
+	display: block;
+	@include font-size(0.75rem);
+}
+ol,
+ul {
+	margin:{
+		top: line(0.5);
+		bottom: line(0.5);
+	}
+	padding: {
+		left: gutter(1);
+	}
+}

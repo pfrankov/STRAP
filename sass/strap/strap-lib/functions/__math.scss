@@ -1,0 +1,15 @@
+// Rounds $number up to $digits after decimal point.
+// +public
+@function round-to($number, $digits: 1) {
+	$digits: ($digits * 10);
+	@if ( $digits < 1 ) {
+		$digits: 1;
+	}
+	@return round($number * $digits) / $digits;
+}
+
+// Returns closest number of $number to $closest with $digits after decimal point.
+// +public
+@function multiple-of($number, $multiple, $digits: 0) {
+	@return round-to($number / $multiple, $digits) * $multiple;
+}

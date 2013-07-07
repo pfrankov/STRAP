@@ -1,0 +1,99 @@
+.Hidden,
+.Template,
+.More {
+	display: none;
+}
+
+
+.HighestDepth {
+	z-index: 999999 !important;
+}
+.Clearfix {
+	@include clearfix;
+}
+
+
+
+@for $i from 1 through 10 {
+	.TopMargin-#{$i} {
+		margin-top: line($i);
+	}
+	.BottomMargin-#{$i} {
+		margin-bottom: line($i);
+	}
+}
+
+
+
+ul.NoStyle {
+	list-style: none;
+
+	&.All {
+		ul {
+			@extend ul.NoStyle;
+		}
+	}
+}
+
+ul.Horizontal {
+	@include clearfix;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+
+	> li {
+		list-style: none;
+		display: inline-block;
+		margin: 0 0 0 gutter(1);
+
+
+		&:first-child {
+			margin: 0;
+		}
+	}
+
+	&.Center {
+		display: inline-block;
+	}
+	&.Right {
+		float: right;
+	}
+}
+
+ul.Justify {
+	@include clearfix;
+
+	margin-bottom: -1em;
+	text-align: justify;
+	text-justify: newspaper;
+
+	text-align-last: justify;
+
+	&:after {
+		width: 100%;
+		height: 0px;
+		visibility: hidden;
+		overflow: hidden;
+		content: "";
+		@include inline-block;
+
+	}
+
+	li  {
+		@include inline-block;
+		text-align: left;
+	}
+}
+
+.Sticky {
+
+	&.Clone {
+		visibility: hidden;
+	}
+
+	&.Stick {
+		position: fixed;
+		top: 0;
+	}
+}
+

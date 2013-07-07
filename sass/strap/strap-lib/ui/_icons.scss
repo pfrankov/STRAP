@@ -1,0 +1,8 @@
+.Icon {
+	@include box-sizing(border-box);
+	display: inline-block;
+	vertical-align: baseline;
+	position: relative;
+	font-style: normal;
+	font-weight: normal;
+}

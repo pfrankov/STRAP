@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+
+@import "strap/init"; // Very important STRAP's initializing
+
+@import "strap/misc/normalize";
+
+// Other stuff
+@import "strap/ui/grid";
+@import "strap/ui/typography";
+@import "strap/ui/helpers";
+@import "strap/ui/tables";
+
+@import "strap/ui/icons";
+@import "strap/ui/icons/entypo";
+
+
+
+
+html {
+	min-height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: $TEXT_COLOR;
+	font-family: $MAIN_FONT_FAMILY;
+}
+
+
+
+a {
+	@include link-style($LINK_COLOR);
+
+	&.Actions {
+		@include unselectable;
+		
+		border-bottom: 1px dashed;
+		cursor: default;
+		text-decoration: none;
+		line-height: 1.3em;
+
+		&.Opened {
+			border:none;
+		}
+	}
+	&.Iconed {
+		text-decoration: none;
+		border: none;
+
+		span {
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+// +public
+@mixin opacity-hide ($transitions...) {
+	opacity: 1;
+	@include transition(opacity $ANIMATION_TIME, $transitions...);
+
+	&.Hidden {
+		z-index: -999999;
+		opacity: 0;
+		@include transition (z-index 0s $ANIMATION_TIME, opacity $ANIMATION_TIME, $transitions...);
+	}
+}
+
+// +public
+@mixin keyframes ($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-o-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+// +public
+@mixin animation ($animations...) {
+	-webkit-animation: $animations;
+	-moz-animation: $animations;
+	-o-animation: $animations;
+	animation: $animations;
+}
