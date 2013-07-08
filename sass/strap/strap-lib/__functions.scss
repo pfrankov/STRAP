@@ -56,7 +56,7 @@
 }
 
 // +public
-@function shadow-steps($x-offset-multiplier: 1, $y-offset-multiplier: 1, $color: #000, $size: 0, $depth: 1, $inset:false, $additional-shadows-list: ()) {
+@function shadow-steps($x-offset-multiplier: 1, $y-offset-multiplier: 1, $color: #000, $size: 0, $depth: 1, $inset:false) {
 	$shadows-list: ();
 
 	$depth: remove-units($depth);
@@ -75,5 +75,5 @@
 		$shadows-list: append($shadows-list, $shadow, comma);
 	}
 
-	@return append($shadows-list, $additional-shadows-list, comma);
+	@return $shadows-list;
 }

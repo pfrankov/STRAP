@@ -4,7 +4,7 @@
 *      [★] STRAP on Sass v0.1
 *      Compass responsive boilerplate + framework
 *   ------------------------------------------------
-*   Author: Pavel Frankov   twitter@twenty
+*   Author: Pavel Frankov   twitter: @twenty
 *   Fork me on Github: https://github.com/pfrankov/strap
 *
 */
@@ -159,30 +159,28 @@ sub {
 /* line 198, ../sass/strap/misc/_normalize.scss */
 img {
   max-width: 100%;
-  width: auto;
-  height: auto;
   border: 0;
   vertical-align: middle;
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 210, ../sass/strap/misc/_normalize.scss */
+/* line 208, ../sass/strap/misc/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 221, ../sass/strap/misc/_normalize.scss */
+/* line 219, ../sass/strap/misc/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* line 232, ../sass/strap/misc/_normalize.scss */
+/* line 230, ../sass/strap/misc/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 241, ../sass/strap/misc/_normalize.scss */
+/* line 239, ../sass/strap/misc/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -190,7 +188,7 @@ legend {
   /* 2 */
 }
 
-/* line 254, ../sass/strap/misc/_normalize.scss */
+/* line 252, ../sass/strap/misc/_normalize.scss */
 button,
 input,
 select,
@@ -203,19 +201,19 @@ textarea {
   /* 3 */
 }
 
-/* line 265, ../sass/strap/misc/_normalize.scss */
+/* line 263, ../sass/strap/misc/_normalize.scss */
 button,
 input {
   line-height: normal;
 }
 
-/* line 276, ../sass/strap/misc/_normalize.scss */
+/* line 274, ../sass/strap/misc/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 290, ../sass/strap/misc/_normalize.scss */
+/* line 288, ../sass/strap/misc/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -226,13 +224,13 @@ input[type="submit"] {
   /* 3 */
 }
 
-/* line 299, ../sass/strap/misc/_normalize.scss */
+/* line 297, ../sass/strap/misc/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 308, ../sass/strap/misc/_normalize.scss */
+/* line 306, ../sass/strap/misc/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -241,7 +239,7 @@ input[type="radio"] {
   /* 2 */
 }
 
-/* line 318, ../sass/strap/misc/_normalize.scss */
+/* line 316, ../sass/strap/misc/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -251,20 +249,20 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 330, ../sass/strap/misc/_normalize.scss */
+/* line 328, ../sass/strap/misc/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 338, ../sass/strap/misc/_normalize.scss */
+/* line 336, ../sass/strap/misc/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 346, ../sass/strap/misc/_normalize.scss */
+/* line 344, ../sass/strap/misc/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -272,7 +270,7 @@ textarea {
   /* 2 */
 }
 
-/* line 358, ../sass/strap/misc/_normalize.scss */
+/* line 356, ../sass/strap/misc/_normalize.scss */
 table {
   max-width: 100%;
   border-collapse: collapse;
@@ -293,7 +291,7 @@ table {
   margin: auto;
   display: table;
   border: none;
-  margin-bottom: 10.22px;
+  margin-bottom: 10px;
 }
 /* line 26, ../sass/strap/strap-lib/__mixins.scss */
 .Row:after {
@@ -1059,7 +1057,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-1[class*="Offset-"] {
@@ -1076,7 +1074,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-2[class*="Offset-"] {
@@ -1093,7 +1091,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-3[class*="Offset-"] {
@@ -1110,7 +1108,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-4[class*="Offset-"] {
@@ -1127,7 +1125,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-5[class*="Offset-"] {
@@ -1144,7 +1142,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-6[class*="Offset-"] {
@@ -1161,7 +1159,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-7[class*="Offset-"] {
@@ -1178,7 +1176,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-8[class*="Offset-"] {
@@ -1195,7 +1193,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-9[class*="Offset-"] {
@@ -1212,7 +1210,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-10[class*="Offset-"] {
@@ -1229,7 +1227,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-11[class*="Offset-"] {
@@ -1246,7 +1244,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-12[class*="Offset-"] {
@@ -1279,7 +1277,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-1[class*="Offset-"] {
@@ -1296,7 +1294,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-2[class*="Offset-"] {
@@ -1313,7 +1311,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-3[class*="Offset-"] {
@@ -1330,7 +1328,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-4[class*="Offset-"] {
@@ -1347,7 +1345,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-5[class*="Offset-"] {
@@ -1364,7 +1362,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-6[class*="Offset-"] {
@@ -1381,7 +1379,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-7[class*="Offset-"] {
@@ -1398,7 +1396,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-8[class*="Offset-"] {
@@ -1415,7 +1413,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-9[class*="Offset-"] {
@@ -1432,7 +1430,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-10[class*="Offset-"] {
@@ -1449,7 +1447,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-11[class*="Offset-"] {
@@ -1466,7 +1464,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-12[class*="Offset-"] {
@@ -1504,7 +1502,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-1[class*="Offset-"] {
@@ -1521,7 +1519,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-2[class*="Offset-"] {
@@ -1538,7 +1536,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-3[class*="Offset-"] {
@@ -1555,7 +1553,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-4[class*="Offset-"] {
@@ -1572,7 +1570,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-5[class*="Offset-"] {
@@ -1589,7 +1587,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-6[class*="Offset-"] {
@@ -1606,7 +1604,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-7[class*="Offset-"] {
@@ -1623,7 +1621,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-8[class*="Offset-"] {
@@ -1640,7 +1638,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-9[class*="Offset-"] {
@@ -1657,7 +1655,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-10[class*="Offset-"] {
@@ -1674,7 +1672,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-11[class*="Offset-"] {
@@ -1691,7 +1689,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-12[class*="Offset-"] {
@@ -1729,7 +1727,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-1[class*="Offset-"] {
@@ -1746,7 +1744,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-2[class*="Offset-"] {
@@ -1763,7 +1761,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-3[class*="Offset-"] {
@@ -1780,7 +1778,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-4[class*="Offset-"] {
@@ -1797,7 +1795,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-5[class*="Offset-"] {
@@ -1814,7 +1812,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-6[class*="Offset-"] {
@@ -1831,7 +1829,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-7[class*="Offset-"] {
@@ -1848,7 +1846,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-8[class*="Offset-"] {
@@ -1865,7 +1863,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-9[class*="Offset-"] {
@@ -1882,7 +1880,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-10[class*="Offset-"] {
@@ -1899,7 +1897,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-11[class*="Offset-"] {
@@ -1916,7 +1914,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-12[class*="Offset-"] {
@@ -1954,7 +1952,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-1[class*="Offset-"] {
@@ -1971,7 +1969,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-2[class*="Offset-"] {
@@ -1988,7 +1986,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-3[class*="Offset-"] {
@@ -2005,7 +2003,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-4[class*="Offset-"] {
@@ -2022,7 +2020,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-5[class*="Offset-"] {
@@ -2039,7 +2037,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-6[class*="Offset-"] {
@@ -2056,7 +2054,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-7[class*="Offset-"] {
@@ -2073,7 +2071,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-8[class*="Offset-"] {
@@ -2090,7 +2088,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-9[class*="Offset-"] {
@@ -2107,7 +2105,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-10[class*="Offset-"] {
@@ -2124,7 +2122,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-11[class*="Offset-"] {
@@ -2141,7 +2139,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-12[class*="Offset-"] {
@@ -2207,7 +2205,7 @@ h1 {
   font-size: 2.7rem;
   margin-top: 61.32px;
   margin-bottom: 40.88px;
-  line-height: 40.88px;
+  line-height: 41px;
 }
 
 /* line 13, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2216,7 +2214,7 @@ h2 {
   font-size: 2.3rem;
   margin-top: 40.88px;
   margin-bottom: 20.44px;
-  line-height: 35.77px;
+  line-height: 36px;
 }
 
 /* line 16, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2225,7 +2223,7 @@ h3 {
   font-size: 1.7rem;
   margin-top: 30.66px;
   margin-bottom: 10.22px;
-  line-height: 25.55px;
+  line-height: 26px;
 }
 
 /* line 19, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2234,7 +2232,7 @@ h4 {
   font-size: 1.3rem;
   margin-top: 20.44px;
   margin-bottom: 10.22px;
-  line-height: 20.44px;
+  line-height: 20px;
 }
 
 /* line 22, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2243,7 +2241,7 @@ h5 {
   font-size: 1rem;
   margin-top: 20.44px;
   margin-bottom: 10.22px;
-  line-height: 15.33px;
+  line-height: 15px;
 }
 
 /* line 25, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2252,7 +2250,7 @@ h6 {
   font-size: 0.8rem;
   margin-top: 20.44px;
   margin-bottom: 10.22px;
-  line-height: 10.22px;
+  line-height: 10px;
 }
 
 /* line 74, ../sass/strap/strap-lib/mixins/__typography.scss */
@@ -2299,8 +2297,8 @@ ul:last-child {
 
 /* line 47, ../sass/strap/strap-lib/ui/_typography.scss */
 p {
-  line-height: 20.44px;
-  margin: 10.22px 0;
+  line-height: 20px;
+  margin: 10px 0;
 }
 
 /* line 51, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2308,14 +2306,14 @@ small {
   display: block;
   font-size: 10.5px;
   font-size: 0.75rem;
-  line-height: 15.33px;
+  line-height: 15px;
 }
 
 /* line 56, ../sass/strap/strap-lib/ui/_typography.scss */
 ol,
 ul {
-  margin-top: 10.22px;
-  margin-bottom: 10.22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding-left: 20px;
 }
 
@@ -2345,111 +2343,92 @@ ul {
 }
 
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-1 {
-  margin-top: 20.44px;
+body .TopMargin-1 {
+  margin-top: 20px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-1 {
-  margin-bottom: 20.44px;
+body .BottomMargin-1 {
+  margin-bottom: 20px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-2 {
-  margin-top: 40.88px;
+body .TopMargin-2 {
+  margin-top: 41px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-2 {
-  margin-bottom: 40.88px;
+body .BottomMargin-2 {
+  margin-bottom: 41px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-3 {
-  margin-top: 61.32px;
+body .TopMargin-3 {
+  margin-top: 61px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-3 {
-  margin-bottom: 61.32px;
+body .BottomMargin-3 {
+  margin-bottom: 61px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-4 {
-  margin-top: 81.76px;
+body .TopMargin-4 {
+  margin-top: 82px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-4 {
-  margin-bottom: 81.76px;
+body .BottomMargin-4 {
+  margin-bottom: 82px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-5 {
-  margin-top: 102.2px;
+body .TopMargin-5 {
+  margin-top: 102px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-5 {
-  margin-bottom: 102.2px;
+body .BottomMargin-5 {
+  margin-bottom: 102px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-6 {
-  margin-top: 122.64px;
+body .TopMargin-6 {
+  margin-top: 123px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-6 {
-  margin-bottom: 122.64px;
+body .BottomMargin-6 {
+  margin-bottom: 123px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-7 {
-  margin-top: 143.08px;
+body .TopMargin-7 {
+  margin-top: 143px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-7 {
-  margin-bottom: 143.08px;
+body .BottomMargin-7 {
+  margin-bottom: 143px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-8 {
-  margin-top: 163.52px;
+body .TopMargin-8 {
+  margin-top: 164px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-8 {
-  margin-bottom: 163.52px;
+body .BottomMargin-8 {
+  margin-bottom: 164px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-9 {
-  margin-top: 183.96px;
+body .TopMargin-9 {
+  margin-top: 184px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-9 {
-  margin-bottom: 183.96px;
+body .BottomMargin-9 {
+  margin-bottom: 184px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-10 {
-  margin-top: 204.4px;
+body .TopMargin-10 {
+  margin-top: 204px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-10 {
-  margin-bottom: 204.4px;
+body .BottomMargin-10 {
+  margin-bottom: 204px;
 }
 
-/* line 28, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 29, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.NoStyle, ul.NoStyle.All ul {
   list-style: none;
 }
 
-/* line 38, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 39, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Horizontal {
   zoom: 1;
   margin: 0;
@@ -2464,26 +2443,26 @@ ul.Horizontal:after {
   height: 0;
   visibility: hidden;
 }
-/* line 44, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 45, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Horizontal > li {
   list-style: none;
   display: inline-block;
   margin: 0 0 0 20px;
 }
-/* line 50, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 51, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Horizontal > li:first-child {
   margin: 0;
 }
-/* line 55, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 56, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Horizontal.Center {
   display: inline-block;
 }
-/* line 58, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 59, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Horizontal.Right {
   float: right;
 }
 
-/* line 63, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 64, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Justify {
   zoom: 1;
   margin-bottom: -1em;
@@ -2499,7 +2478,7 @@ ul.Justify:after {
   height: 0;
   visibility: hidden;
 }
-/* line 72, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 73, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Justify:after {
   width: 100%;
   height: 0px;
@@ -2513,7 +2492,7 @@ ul.Justify:after {
   zoom: 1;
   *display: inline;
 }
-/* line 82, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 83, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Justify li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -2524,11 +2503,11 @@ ul.Justify li {
   text-align: left;
 }
 
-/* line 90, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 91, ../sass/strap/strap-lib/ui/_helpers.scss */
 .Sticky.Clone {
   visibility: hidden;
 }
-/* line 94, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 95, ../sass/strap/strap-lib/ui/_helpers.scss */
 .Sticky.Stick {
   position: fixed;
   top: 0;
@@ -2538,8 +2517,8 @@ ul.Justify li {
 table.Table {
   width: 100%;
   border-collapse: separate;
-  margin-top: 20.44px;
-  margin-bottom: 20.44px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /* line 11, ../sass/strap/strap-lib/ui/_tables.scss */
 table.Table thead,
@@ -2550,7 +2529,7 @@ table.Table tbody {
 /* line 19, ../sass/strap/strap-lib/ui/_tables.scss */
 table.Table th,
 table.Table td {
-  padding: 10.22px 10px;
+  padding: 10px 10px;
 }
 /* line 22, ../sass/strap/strap-lib/ui/_tables.scss */
 table.Table th.Center,
@@ -2571,7 +2550,7 @@ table.Table td.Right {
 table.Table th {
   font-size: 16.8px;
   font-size: 1.2rem;
-  line-height: 25.55px;
+  line-height: 26px;
 }
 /* line 37, ../sass/strap/strap-lib/ui/_tables.scss */
 table.Table td {
@@ -2603,7 +2582,7 @@ table.Table td {
   src: url('fonts/icons/entypo.eot?#iefix') format("embedded-opentype"), url('fonts/icons/entypo.woff') format("woff"), url('fonts/icons/entypo.svg#Entypo') format("svg"), url('fonts/icons/entypo.ttf') format("truetype");
 }
 
-/* line 4, ../sass/strap/ui/icons/_entypo.scss */
+/* line 5, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo {
   font-family: "Entypo";
   speak: none;
@@ -2613,1139 +2592,1139 @@ table.Table td {
   text-transform: none;
   line-height: 1;
 }
-/* line 16, ../sass/strap/ui/icons/_entypo.scss */
+/* line 17, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Plus:before {
   content: "\e813";
 }
-/* line 17, ../sass/strap/ui/icons/_entypo.scss */
+/* line 18, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Minus:before {
   content: "\e816";
 }
-/* line 18, ../sass/strap/ui/icons/_entypo.scss */
+/* line 19, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Info:before {
   content: "\e81b";
 }
-/* line 19, ../sass/strap/ui/icons/_entypo.scss */
+/* line 20, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LeftThin:before {
   content: "\e88b";
 }
-/* line 20, ../sass/strap/ui/icons/_entypo.scss */
+/* line 21, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.UpThin:before {
   content: "\e88d";
 }
-/* line 21, ../sass/strap/ui/icons/_entypo.scss */
+/* line 22, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.RightThin:before {
   content: "\e88c";
 }
-/* line 22, ../sass/strap/ui/icons/_entypo.scss */
+/* line 23, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DownThin:before {
   content: "\e87e";
 }
-/* line 23, ../sass/strap/ui/icons/_entypo.scss */
+/* line 24, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LevelUp:before {
   content: "\e892";
 }
-/* line 24, ../sass/strap/ui/icons/_entypo.scss */
+/* line 25, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LevelDown:before {
   content: "\e891";
 }
-/* line 25, ../sass/strap/ui/icons/_entypo.scss */
+/* line 26, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Switch:before {
   content: "\e895";
 }
-/* line 26, ../sass/strap/ui/icons/_entypo.scss */
+/* line 27, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Infinity:before {
   content: "\e8c1";
 }
-/* line 27, ../sass/strap/ui/icons/_entypo.scss */
+/* line 28, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.PlusSquared:before {
   content: "\e815";
 }
-/* line 28, ../sass/strap/ui/icons/_entypo.scss */
+/* line 29, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.MinusSquared:before {
   content: "\e818";
 }
-/* line 29, ../sass/strap/ui/icons/_entypo.scss */
+/* line 30, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Home:before {
   content: "\e81e";
 }
-/* line 30, ../sass/strap/ui/icons/_entypo.scss */
+/* line 31, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Keyboard:before {
   content: "\e835";
 }
-/* line 31, ../sass/strap/ui/icons/_entypo.scss */
+/* line 32, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Erase:before {
   content: "\e8c2";
 }
-/* line 32, ../sass/strap/ui/icons/_entypo.scss */
+/* line 33, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Pause:before {
   content: "\e898";
 }
-/* line 33, ../sass/strap/ui/icons/_entypo.scss */
+/* line 34, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.FastForward:before {
   content: "\e89c";
 }
-/* line 34, ../sass/strap/ui/icons/_entypo.scss */
+/* line 35, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.FastBackward:before {
   content: "\e89d";
 }
-/* line 35, ../sass/strap/ui/icons/_entypo.scss */
+/* line 36, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ToEnd:before {
   content: "\e89a";
 }
-/* line 36, ../sass/strap/ui/icons/_entypo.scss */
+/* line 37, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ToStart:before {
   content: "\e89b";
 }
-/* line 37, ../sass/strap/ui/icons/_entypo.scss */
+/* line 38, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Hourglass:before {
   content: "\e85a";
 }
-/* line 38, ../sass/strap/ui/icons/_entypo.scss */
+/* line 39, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Stop:before {
   content: "\e897";
 }
-/* line 39, ../sass/strap/ui/icons/_entypo.scss */
+/* line 40, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.UpDir:before {
   content: "\e879";
 }
-/* line 40, ../sass/strap/ui/icons/_entypo.scss */
+/* line 41, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Play:before {
   content: "\e896";
 }
-/* line 41, ../sass/strap/ui/icons/_entypo.scss */
+/* line 42, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.RightDir:before {
   content: "\e878";
 }
-/* line 42, ../sass/strap/ui/icons/_entypo.scss */
+/* line 43, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DownDir:before {
   content: "\e876";
 }
-/* line 43, ../sass/strap/ui/icons/_entypo.scss */
+/* line 44, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LeftDir:before {
   content: "\e877";
 }
-/* line 44, ../sass/strap/ui/icons/_entypo.scss */
+/* line 45, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Adjust:before {
   content: "\e85c";
 }
-/* line 45, ../sass/strap/ui/icons/_entypo.scss */
+/* line 46, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Cloud:before {
   content: "\e8b1";
 }
-/* line 46, ../sass/strap/ui/icons/_entypo.scss */
+/* line 47, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Star:before {
   content: "\e807";
 }
-/* line 47, ../sass/strap/ui/icons/_entypo.scss */
+/* line 48, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.StarEmpty:before {
   content: "\e808";
 }
-/* line 48, ../sass/strap/ui/icons/_entypo.scss */
+/* line 49, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Cup:before {
   content: "\e83f";
 }
-/* line 49, ../sass/strap/ui/icons/_entypo.scss */
+/* line 50, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Menu:before {
   content: "\e810";
 }
-/* line 50, ../sass/strap/ui/icons/_entypo.scss */
+/* line 51, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Moon:before {
   content: "\e8b4";
 }
-/* line 51, ../sass/strap/ui/icons/_entypo.scss */
+/* line 52, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.HeartEmpty:before {
   content: "\e806";
 }
-/* line 52, ../sass/strap/ui/icons/_entypo.scss */
+/* line 53, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Heart:before {
   content: "\e805";
 }
-/* line 53, ../sass/strap/ui/icons/_entypo.scss */
+/* line 54, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Note:before {
   content: "\e800";
 }
-/* line 54, ../sass/strap/ui/icons/_entypo.scss */
+/* line 55, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.NoteBeamed:before {
   content: "\e801";
 }
-/* line 55, ../sass/strap/ui/icons/_entypo.scss */
+/* line 56, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Layout:before {
   content: "\e80f";
 }
-/* line 56, ../sass/strap/ui/icons/_entypo.scss */
+/* line 57, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Flag:before {
   content: "\e825";
 }
-/* line 57, ../sass/strap/ui/icons/_entypo.scss */
+/* line 58, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Tools:before {
   content: "\e84d";
 }
-/* line 58, ../sass/strap/ui/icons/_entypo.scss */
+/* line 59, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Cog:before {
   content: "\e84c";
 }
-/* line 59, ../sass/strap/ui/icons/_entypo.scss */
+/* line 60, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Attention:before {
   content: "\e837";
 }
-/* line 60, ../sass/strap/ui/icons/_entypo.scss */
+/* line 61, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Flash:before {
   content: "\e8b3";
 }
-/* line 61, ../sass/strap/ui/icons/_entypo.scss */
+/* line 62, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Record:before {
   content: "\e899";
 }
-/* line 62, ../sass/strap/ui/icons/_entypo.scss */
+/* line 63, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CloudThunder:before {
   content: "\e8b2";
 }
-/* line 63, ../sass/strap/ui/icons/_entypo.scss */
+/* line 64, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Tape:before {
   content: "\e8c7";
 }
-/* line 64, ../sass/strap/ui/icons/_entypo.scss */
+/* line 65, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Flight:before {
   content: "\e8b5";
 }
-/* line 65, ../sass/strap/ui/icons/_entypo.scss */
+/* line 66, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Mail:before {
   content: "\e804";
 }
-/* line 66, ../sass/strap/ui/icons/_entypo.scss */
+/* line 67, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Pencil:before {
   content: "\e831";
 }
-/* line 67, ../sass/strap/ui/icons/_entypo.scss */
+/* line 68, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Feather:before {
   content: "\e832";
 }
-/* line 68, ../sass/strap/ui/icons/_entypo.scss */
+/* line 69, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Check:before {
   content: "\e811";
 }
-/* line 69, ../sass/strap/ui/icons/_entypo.scss */
+/* line 70, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Cancel:before {
   content: "\e812";
 }
-/* line 70, ../sass/strap/ui/icons/_entypo.scss */
+/* line 71, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CancelCircled:before {
   content: "\e87f";
 }
-/* line 71, ../sass/strap/ui/icons/_entypo.scss */
+/* line 72, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CancelSquared:before {
   content: "\e880";
 }
-/* line 72, ../sass/strap/ui/icons/_entypo.scss */
+/* line 73, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Help:before {
   content: "\e819";
 }
-/* line 73, ../sass/strap/ui/icons/_entypo.scss */
+/* line 74, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Quote:before {
   content: "\e82e";
 }
-/* line 74, ../sass/strap/ui/icons/_entypo.scss */
+/* line 75, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.PlusCircled:before {
   content: "\e814";
 }
-/* line 75, ../sass/strap/ui/icons/_entypo.scss */
+/* line 76, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.MinusCircled:before {
   content: "\e817";
 }
-/* line 76, ../sass/strap/ui/icons/_entypo.scss */
+/* line 77, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Right:before {
   content: "\e874";
 }
-/* line 77, ../sass/strap/ui/icons/_entypo.scss */
+/* line 78, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Direction:before {
   content: "\e83d";
 }
-/* line 78, ../sass/strap/ui/icons/_entypo.scss */
+/* line 79, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Forward:before {
   content: "\e82d";
 }
-/* line 79, ../sass/strap/ui/icons/_entypo.scss */
+/* line 80, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Ccw:before {
   content: "\e88e";
 }
-/* line 80, ../sass/strap/ui/icons/_entypo.scss */
+/* line 81, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Cw:before {
   content: "\e88f";
 }
-/* line 81, ../sass/strap/ui/icons/_entypo.scss */
+/* line 82, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Left:before {
   content: "\e873";
 }
-/* line 82, ../sass/strap/ui/icons/_entypo.scss */
+/* line 83, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Up:before {
   content: "\e875";
 }
-/* line 83, ../sass/strap/ui/icons/_entypo.scss */
+/* line 84, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Down:before {
   content: "\e872";
 }
-/* line 84, ../sass/strap/ui/icons/_entypo.scss */
+/* line 85, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ListAdd:before {
   content: "\e8a5";
 }
-/* line 85, ../sass/strap/ui/icons/_entypo.scss */
+/* line 86, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.List:before {
   content: "\e8a4";
 }
-/* line 86, ../sass/strap/ui/icons/_entypo.scss */
+/* line 87, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LeftBold:before {
   content: "\e87b";
 }
-/* line 87, ../sass/strap/ui/icons/_entypo.scss */
+/* line 88, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.RightBold:before {
   content: "\e87c";
 }
-/* line 88, ../sass/strap/ui/icons/_entypo.scss */
+/* line 89, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.UpBold:before {
   content: "\e87d";
 }
-/* line 89, ../sass/strap/ui/icons/_entypo.scss */
+/* line 90, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DownBold:before {
   content: "\e87a";
 }
-/* line 90, ../sass/strap/ui/icons/_entypo.scss */
+/* line 91, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.UserAdd:before {
   content: "\e80b";
 }
-/* line 91, ../sass/strap/ui/icons/_entypo.scss */
+/* line 92, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.HelpCircled:before {
   content: "\e81a";
 }
-/* line 92, ../sass/strap/ui/icons/_entypo.scss */
+/* line 93, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.InfoCircled:before {
   content: "\e81c";
 }
-/* line 93, ../sass/strap/ui/icons/_entypo.scss */
+/* line 94, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Eye:before {
   content: "\e823";
 }
-/* line 94, ../sass/strap/ui/icons/_entypo.scss */
+/* line 95, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Tag:before {
   content: "\e824";
 }
-/* line 95, ../sass/strap/ui/icons/_entypo.scss */
+/* line 96, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.UploadCloud:before {
   content: "\e82a";
 }
-/* line 96, ../sass/strap/ui/icons/_entypo.scss */
+/* line 97, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Reply:before {
   content: "\e82b";
 }
-/* line 97, ../sass/strap/ui/icons/_entypo.scss */
+/* line 98, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ReplyAll:before {
   content: "\e82c";
 }
-/* line 98, ../sass/strap/ui/icons/_entypo.scss */
+/* line 99, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Code:before {
   content: "\e82f";
 }
-/* line 99, ../sass/strap/ui/icons/_entypo.scss */
+/* line 100, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Export:before {
   content: "\e830";
 }
-/* line 100, ../sass/strap/ui/icons/_entypo.scss */
+/* line 101, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Print:before {
   content: "\e833";
 }
-/* line 101, ../sass/strap/ui/icons/_entypo.scss */
+/* line 102, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Retweet:before {
   content: "\e834";
 }
-/* line 102, ../sass/strap/ui/icons/_entypo.scss */
+/* line 103, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Comment:before {
   content: "\e836";
 }
-/* line 103, ../sass/strap/ui/icons/_entypo.scss */
+/* line 104, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Chat:before {
   content: "\e883";
 }
-/* line 104, ../sass/strap/ui/icons/_entypo.scss */
+/* line 105, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Vcard:before {
   content: "\e839";
 }
-/* line 105, ../sass/strap/ui/icons/_entypo.scss */
+/* line 106, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Address:before {
   content: "\e83a";
 }
-/* line 106, ../sass/strap/ui/icons/_entypo.scss */
+/* line 107, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Location:before {
   content: "\e83b";
 }
-/* line 107, ../sass/strap/ui/icons/_entypo.scss */
+/* line 108, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Map:before {
   content: "\e83c";
 }
-/* line 108, ../sass/strap/ui/icons/_entypo.scss */
+/* line 109, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Compass:before {
   content: "\e83e";
 }
-/* line 109, ../sass/strap/ui/icons/_entypo.scss */
+/* line 110, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Trash:before {
   content: "\e840";
 }
-/* line 110, ../sass/strap/ui/icons/_entypo.scss */
+/* line 111, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Doc:before {
   content: "\e841";
 }
-/* line 111, ../sass/strap/ui/icons/_entypo.scss */
+/* line 112, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DocTextInv:before {
   content: "\e845";
 }
-/* line 112, ../sass/strap/ui/icons/_entypo.scss */
+/* line 113, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Docs:before {
   content: "\e842";
 }
-/* line 113, ../sass/strap/ui/icons/_entypo.scss */
+/* line 114, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DocLandscape:before {
   content: "\e843";
 }
-/* line 114, ../sass/strap/ui/icons/_entypo.scss */
+/* line 115, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Archive:before {
   content: "\e886";
 }
-/* line 115, ../sass/strap/ui/icons/_entypo.scss */
+/* line 116, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Rss:before {
   content: "\e84a";
 }
-/* line 116, ../sass/strap/ui/icons/_entypo.scss */
+/* line 117, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Share:before {
   content: "\e84e";
 }
-/* line 117, ../sass/strap/ui/icons/_entypo.scss */
+/* line 118, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Basket:before {
   content: "\e850";
 }
-/* line 118, ../sass/strap/ui/icons/_entypo.scss */
+/* line 119, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Shareable:before {
   content: "\e84f";
 }
-/* line 119, ../sass/strap/ui/icons/_entypo.scss */
+/* line 120, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Login:before {
   content: "\e853";
 }
-/* line 120, ../sass/strap/ui/icons/_entypo.scss */
+/* line 121, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Logout:before {
   content: "\e854";
 }
-/* line 121, ../sass/strap/ui/icons/_entypo.scss */
+/* line 122, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Volume:before {
   content: "\e858";
 }
-/* line 122, ../sass/strap/ui/icons/_entypo.scss */
+/* line 123, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ResizeFull:before {
   content: "\e85e";
 }
-/* line 123, ../sass/strap/ui/icons/_entypo.scss */
+/* line 124, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ResizeSmall:before {
   content: "\e85f";
 }
-/* line 124, ../sass/strap/ui/icons/_entypo.scss */
+/* line 125, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Popup:before {
   content: "\e860";
 }
-/* line 125, ../sass/strap/ui/icons/_entypo.scss */
+/* line 126, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Publish:before {
   content: "\e861";
 }
-/* line 126, ../sass/strap/ui/icons/_entypo.scss */
+/* line 127, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Window:before {
   content: "\e862";
 }
-/* line 127, ../sass/strap/ui/icons/_entypo.scss */
+/* line 128, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ArrowCombo:before {
   content: "\e863";
 }
-/* line 128, ../sass/strap/ui/icons/_entypo.scss */
+/* line 129, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ChartPie:before {
   content: "\e8c3";
 }
-/* line 129, ../sass/strap/ui/icons/_entypo.scss */
+/* line 130, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Language:before {
   content: "\e8c9";
 }
-/* line 130, ../sass/strap/ui/icons/_entypo.scss */
+/* line 131, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Air:before {
   content: "\e8cd";
 }
-/* line 131, ../sass/strap/ui/icons/_entypo.scss */
+/* line 132, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Database:before {
   content: "\e8d2";
 }
-/* line 132, ../sass/strap/ui/icons/_entypo.scss */
+/* line 133, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Drive:before {
   content: "\e8d3";
 }
-/* line 133, ../sass/strap/ui/icons/_entypo.scss */
+/* line 134, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Bucket:before {
   content: "\e8d4";
 }
-/* line 134, ../sass/strap/ui/icons/_entypo.scss */
+/* line 135, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Thermometer:before {
   content: "\e8d5";
 }
-/* line 135, ../sass/strap/ui/icons/_entypo.scss */
+/* line 136, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DownCircled:before {
   content: "\e864";
 }
-/* line 136, ../sass/strap/ui/icons/_entypo.scss */
+/* line 137, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LeftCircled:before {
   content: "\e865";
 }
-/* line 137, ../sass/strap/ui/icons/_entypo.scss */
+/* line 138, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.RightCircled:before {
   content: "\e866";
 }
-/* line 138, ../sass/strap/ui/icons/_entypo.scss */
+/* line 139, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.UpCircled:before {
   content: "\e867";
 }
-/* line 139, ../sass/strap/ui/icons/_entypo.scss */
+/* line 140, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DownOpen:before {
   content: "\e868";
 }
-/* line 140, ../sass/strap/ui/icons/_entypo.scss */
+/* line 141, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LeftOpen:before {
   content: "\e869";
 }
-/* line 141, ../sass/strap/ui/icons/_entypo.scss */
+/* line 142, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.RightOpen:before {
   content: "\e86a";
 }
-/* line 142, ../sass/strap/ui/icons/_entypo.scss */
+/* line 143, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.UpOpen:before {
   content: "\e86b";
 }
-/* line 143, ../sass/strap/ui/icons/_entypo.scss */
+/* line 144, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DownOpenMini:before {
   content: "\e86c";
 }
-/* line 144, ../sass/strap/ui/icons/_entypo.scss */
+/* line 145, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LeftOpenMini:before {
   content: "\e889";
 }
-/* line 145, ../sass/strap/ui/icons/_entypo.scss */
+/* line 146, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.RightOpenMini:before {
   content: "\e88a";
 }
-/* line 146, ../sass/strap/ui/icons/_entypo.scss */
+/* line 147, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.UpOpenMini:before {
   content: "\e86d";
 }
-/* line 147, ../sass/strap/ui/icons/_entypo.scss */
+/* line 148, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DownOpenBig:before {
   content: "\e86e";
 }
-/* line 148, ../sass/strap/ui/icons/_entypo.scss */
+/* line 149, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LeftOpenBig:before {
   content: "\e86f";
 }
-/* line 149, ../sass/strap/ui/icons/_entypo.scss */
+/* line 150, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.RightOpenBig:before {
   content: "\e870";
 }
-/* line 150, ../sass/strap/ui/icons/_entypo.scss */
+/* line 151, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.UpOpenBig:before {
   content: "\e871";
 }
-/* line 151, ../sass/strap/ui/icons/_entypo.scss */
+/* line 152, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Progress0:before {
   content: "\e89e";
 }
-/* line 152, ../sass/strap/ui/icons/_entypo.scss */
+/* line 153, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Progress1:before {
   content: "\e89f";
 }
-/* line 153, ../sass/strap/ui/icons/_entypo.scss */
+/* line 154, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Progress2:before {
   content: "\e8a0";
 }
-/* line 154, ../sass/strap/ui/icons/_entypo.scss */
+/* line 155, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Progress3:before {
   content: "\e8a1";
 }
-/* line 155, ../sass/strap/ui/icons/_entypo.scss */
+/* line 156, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.BackInTime:before {
   content: "\e8a9";
 }
-/* line 156, ../sass/strap/ui/icons/_entypo.scss */
+/* line 157, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Network:before {
   content: "\e8ac";
 }
-/* line 157, ../sass/strap/ui/icons/_entypo.scss */
+/* line 158, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Inbox:before {
   content: "\e8ae";
 }
-/* line 158, ../sass/strap/ui/icons/_entypo.scss */
+/* line 159, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Install:before {
   content: "\e8af";
 }
-/* line 159, ../sass/strap/ui/icons/_entypo.scss */
+/* line 160, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Lifebuoy:before {
   content: "\e8b8";
 }
-/* line 160, ../sass/strap/ui/icons/_entypo.scss */
+/* line 161, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Mouse:before {
   content: "\e8b9";
 }
-/* line 161, ../sass/strap/ui/icons/_entypo.scss */
+/* line 162, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Dot:before {
   content: "\e8bc";
 }
-/* line 162, ../sass/strap/ui/icons/_entypo.scss */
+/* line 163, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Dot2:before {
   content: "\e8bd";
 }
-/* line 163, ../sass/strap/ui/icons/_entypo.scss */
+/* line 164, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Dot3:before {
   content: "\e8be";
 }
-/* line 164, ../sass/strap/ui/icons/_entypo.scss */
+/* line 165, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Suitcase:before {
   content: "\e8bb";
 }
-/* line 165, ../sass/strap/ui/icons/_entypo.scss */
+/* line 166, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.FlowCascade:before {
   content: "\e8d7";
 }
-/* line 166, ../sass/strap/ui/icons/_entypo.scss */
+/* line 167, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.FlowBranch:before {
   content: "\e8d8";
 }
-/* line 167, ../sass/strap/ui/icons/_entypo.scss */
+/* line 168, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.FlowTree:before {
   content: "\e8d9";
 }
-/* line 168, ../sass/strap/ui/icons/_entypo.scss */
+/* line 169, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.FlowLine:before {
   content: "\e8da";
 }
-/* line 169, ../sass/strap/ui/icons/_entypo.scss */
+/* line 170, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.FlowParallel:before {
   content: "\e8db";
 }
-/* line 170, ../sass/strap/ui/icons/_entypo.scss */
+/* line 171, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Brush:before {
   content: "\e8bf";
 }
-/* line 171, ../sass/strap/ui/icons/_entypo.scss */
+/* line 172, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.PaperPlane:before {
   content: "\e8b6";
 }
-/* line 172, ../sass/strap/ui/icons/_entypo.scss */
+/* line 173, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Magnet:before {
   content: "\e8c0";
 }
-/* line 173, ../sass/strap/ui/icons/_entypo.scss */
+/* line 174, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Gauge:before {
   content: "\e8dd";
 }
-/* line 174, ../sass/strap/ui/icons/_entypo.scss */
+/* line 175, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.TrafficCone:before {
   content: "\e8de";
 }
-/* line 175, ../sass/strap/ui/icons/_entypo.scss */
+/* line 176, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Cc:before {
   content: "\e8df";
 }
-/* line 176, ../sass/strap/ui/icons/_entypo.scss */
+/* line 177, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CcBy:before {
   content: "\e8e0";
 }
-/* line 177, ../sass/strap/ui/icons/_entypo.scss */
+/* line 178, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CcNc:before {
   content: "\e8e1";
 }
-/* line 178, ../sass/strap/ui/icons/_entypo.scss */
+/* line 179, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CcNcEu:before {
   content: "\e8e2";
 }
-/* line 179, ../sass/strap/ui/icons/_entypo.scss */
+/* line 180, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CcNcJp:before {
   content: "\e8e3";
 }
-/* line 180, ../sass/strap/ui/icons/_entypo.scss */
+/* line 181, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CcSa:before {
   content: "\e8e4";
 }
-/* line 181, ../sass/strap/ui/icons/_entypo.scss */
+/* line 182, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CcNd:before {
   content: "\e8e5";
 }
-/* line 182, ../sass/strap/ui/icons/_entypo.scss */
+/* line 183, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CcPd:before {
   content: "\e8e6";
 }
-/* line 183, ../sass/strap/ui/icons/_entypo.scss */
+/* line 184, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CcZero:before {
   content: "\e8e7";
 }
-/* line 184, ../sass/strap/ui/icons/_entypo.scss */
+/* line 185, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CcShare:before {
   content: "\e8e8";
 }
-/* line 185, ../sass/strap/ui/icons/_entypo.scss */
+/* line 186, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CcRemix:before {
   content: "\e8e9";
 }
-/* line 186, ../sass/strap/ui/icons/_entypo.scss */
+/* line 187, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Github:before {
   content: "\e8ea";
 }
-/* line 187, ../sass/strap/ui/icons/_entypo.scss */
+/* line 188, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.GithubCircled:before {
   content: "\e8eb";
 }
-/* line 188, ../sass/strap/ui/icons/_entypo.scss */
+/* line 189, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Flickr:before {
   content: "\e8ec";
 }
-/* line 189, ../sass/strap/ui/icons/_entypo.scss */
+/* line 190, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.FlickrCircled:before {
   content: "\e8ed";
 }
-/* line 190, ../sass/strap/ui/icons/_entypo.scss */
+/* line 191, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Vimeo:before {
   content: "\e8ee";
 }
-/* line 191, ../sass/strap/ui/icons/_entypo.scss */
+/* line 192, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.VimeoCircled:before {
   content: "\e8ef";
 }
-/* line 192, ../sass/strap/ui/icons/_entypo.scss */
+/* line 193, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Twitter:before {
   content: "\e8f0";
 }
-/* line 193, ../sass/strap/ui/icons/_entypo.scss */
+/* line 194, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.TwitterCircled:before {
   content: "\e8f1";
 }
-/* line 194, ../sass/strap/ui/icons/_entypo.scss */
+/* line 195, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Facebook:before {
   content: "\e8f2";
 }
-/* line 195, ../sass/strap/ui/icons/_entypo.scss */
+/* line 196, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.FacebookCircled:before {
   content: "\e8f3";
 }
-/* line 196, ../sass/strap/ui/icons/_entypo.scss */
+/* line 197, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.FacebookSquared:before {
   content: "\e8f4";
 }
-/* line 197, ../sass/strap/ui/icons/_entypo.scss */
+/* line 198, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Gplus:before {
   content: "\e8f5";
 }
-/* line 198, ../sass/strap/ui/icons/_entypo.scss */
+/* line 199, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.GplusCircled:before {
   content: "\e8f6";
 }
-/* line 199, ../sass/strap/ui/icons/_entypo.scss */
+/* line 200, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Pinterest:before {
   content: "\e8f7";
 }
-/* line 200, ../sass/strap/ui/icons/_entypo.scss */
+/* line 201, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.PinterestCircled:before {
   content: "\e8f8";
 }
-/* line 201, ../sass/strap/ui/icons/_entypo.scss */
+/* line 202, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Tumblr:before {
   content: "\e8f9";
 }
-/* line 202, ../sass/strap/ui/icons/_entypo.scss */
+/* line 203, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.TumblrCircled:before {
   content: "\e8fa";
 }
-/* line 203, ../sass/strap/ui/icons/_entypo.scss */
+/* line 204, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Linkedin:before {
   content: "\e8fb";
 }
-/* line 204, ../sass/strap/ui/icons/_entypo.scss */
+/* line 205, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LinkedinCircled:before {
   content: "\e8fc";
 }
-/* line 205, ../sass/strap/ui/icons/_entypo.scss */
+/* line 206, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Dribbble:before {
   content: "\e8fd";
 }
-/* line 206, ../sass/strap/ui/icons/_entypo.scss */
+/* line 207, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DribbbleCircled:before {
   content: "\e8fe";
 }
-/* line 207, ../sass/strap/ui/icons/_entypo.scss */
+/* line 208, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Stumbleupon:before {
   content: "\e8ff";
 }
-/* line 208, ../sass/strap/ui/icons/_entypo.scss */
+/* line 209, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.StumbleuponCircled:before {
   content: "\e900";
 }
-/* line 209, ../sass/strap/ui/icons/_entypo.scss */
+/* line 210, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Lastfm:before {
   content: "\e901";
 }
-/* line 210, ../sass/strap/ui/icons/_entypo.scss */
+/* line 211, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LastfmCircled:before {
   content: "\e902";
 }
-/* line 211, ../sass/strap/ui/icons/_entypo.scss */
+/* line 212, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Rdio:before {
   content: "\e903";
 }
-/* line 212, ../sass/strap/ui/icons/_entypo.scss */
+/* line 213, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.RdioCircled:before {
   content: "\e904";
 }
-/* line 213, ../sass/strap/ui/icons/_entypo.scss */
+/* line 214, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Spotify:before {
   content: "\e905";
 }
-/* line 214, ../sass/strap/ui/icons/_entypo.scss */
+/* line 215, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.SpotifyCircled:before {
   content: "\e906";
 }
-/* line 215, ../sass/strap/ui/icons/_entypo.scss */
+/* line 216, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Qq:before {
   content: "\e907";
 }
-/* line 216, ../sass/strap/ui/icons/_entypo.scss */
+/* line 217, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Instagram:before {
   content: "\e908";
 }
-/* line 217, ../sass/strap/ui/icons/_entypo.scss */
+/* line 218, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Dropbox:before {
   content: "\e909";
 }
-/* line 218, ../sass/strap/ui/icons/_entypo.scss */
+/* line 219, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Evernote:before {
   content: "\e90a";
 }
-/* line 219, ../sass/strap/ui/icons/_entypo.scss */
+/* line 220, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Flattr:before {
   content: "\e90b";
 }
-/* line 220, ../sass/strap/ui/icons/_entypo.scss */
+/* line 221, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Skype:before {
   content: "\e90c";
 }
-/* line 221, ../sass/strap/ui/icons/_entypo.scss */
+/* line 222, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.SkypeCircled:before {
   content: "\e90d";
 }
-/* line 222, ../sass/strap/ui/icons/_entypo.scss */
+/* line 223, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Renren:before {
   content: "\e90e";
 }
-/* line 223, ../sass/strap/ui/icons/_entypo.scss */
+/* line 224, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.SinaWeibo:before {
   content: "\e90f";
 }
-/* line 224, ../sass/strap/ui/icons/_entypo.scss */
+/* line 225, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Paypal:before {
   content: "\e910";
 }
-/* line 225, ../sass/strap/ui/icons/_entypo.scss */
+/* line 226, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Picasa:before {
   content: "\e911";
 }
-/* line 226, ../sass/strap/ui/icons/_entypo.scss */
+/* line 227, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Soundcloud:before {
   content: "\e912";
 }
-/* line 227, ../sass/strap/ui/icons/_entypo.scss */
+/* line 228, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Mixi:before {
   content: "\e913";
 }
-/* line 228, ../sass/strap/ui/icons/_entypo.scss */
+/* line 229, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Behance:before {
   content: "\e914";
 }
-/* line 229, ../sass/strap/ui/icons/_entypo.scss */
+/* line 230, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.GoogleCircles:before {
   content: "\e915";
 }
-/* line 230, ../sass/strap/ui/icons/_entypo.scss */
+/* line 231, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Vkontakte:before {
   content: "\e916";
 }
-/* line 231, ../sass/strap/ui/icons/_entypo.scss */
+/* line 232, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Smashing:before {
   content: "\e917";
 }
-/* line 232, ../sass/strap/ui/icons/_entypo.scss */
+/* line 233, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DbShape:before {
   content: "\e919";
 }
-/* line 233, ../sass/strap/ui/icons/_entypo.scss */
+/* line 234, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Sweden:before {
   content: "\e918";
 }
-/* line 234, ../sass/strap/ui/icons/_entypo.scss */
+/* line 235, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LogoDb:before {
   content: "\e91a";
 }
-/* line 235, ../sass/strap/ui/icons/_entypo.scss */
+/* line 236, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Picture:before {
   content: "\e80d";
 }
-/* line 236, ../sass/strap/ui/icons/_entypo.scss */
+/* line 237, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Globe:before {
   content: "\e8b0";
 }
-/* line 237, ../sass/strap/ui/icons/_entypo.scss */
+/* line 238, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Leaf:before {
   content: "\e8b7";
 }
-/* line 238, ../sass/strap/ui/icons/_entypo.scss */
+/* line 239, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.GraduationCap:before {
   content: "\e8c8";
 }
-/* line 239, ../sass/strap/ui/icons/_entypo.scss */
+/* line 240, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Mic:before {
   content: "\e855";
 }
-/* line 240, ../sass/strap/ui/icons/_entypo.scss */
+/* line 241, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Palette:before {
   content: "\e8a3";
 }
-/* line 241, ../sass/strap/ui/icons/_entypo.scss */
+/* line 242, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Ticket:before {
   content: "\e8ca";
 }
-/* line 242, ../sass/strap/ui/icons/_entypo.scss */
+/* line 243, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Video:before {
   content: "\e80c";
 }
-/* line 243, ../sass/strap/ui/icons/_entypo.scss */
+/* line 244, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Target:before {
   content: "\e8a2";
 }
-/* line 244, ../sass/strap/ui/icons/_entypo.scss */
+/* line 245, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Trophy:before {
   content: "\e8a7";
 }
-/* line 245, ../sass/strap/ui/icons/_entypo.scss */
+/* line 246, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ThumbsUp:before {
   content: "\e826";
 }
-/* line 246, ../sass/strap/ui/icons/_entypo.scss */
+/* line 247, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ThumbsDown:before {
   content: "\e827";
 }
-/* line 247, ../sass/strap/ui/icons/_entypo.scss */
+/* line 248, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Bag:before {
   content: "\e851";
 }
-/* line 248, ../sass/strap/ui/icons/_entypo.scss */
+/* line 249, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.User:before {
   content: "\e809";
 }
-/* line 249, ../sass/strap/ui/icons/_entypo.scss */
+/* line 250, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Users:before {
   content: "\e80a";
 }
-/* line 250, ../sass/strap/ui/icons/_entypo.scss */
+/* line 251, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Lamp:before {
   content: "\e887";
 }
-/* line 251, ../sass/strap/ui/icons/_entypo.scss */
+/* line 252, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Alert:before {
   content: "\e838";
 }
-/* line 252, ../sass/strap/ui/icons/_entypo.scss */
+/* line 253, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Water:before {
   content: "\e8cb";
 }
-/* line 253, ../sass/strap/ui/icons/_entypo.scss */
+/* line 254, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Droplet:before {
   content: "\e8cc";
 }
-/* line 254, ../sass/strap/ui/icons/_entypo.scss */
+/* line 255, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.CreditCard:before {
   content: "\e8ce";
 }
-/* line 255, ../sass/strap/ui/icons/_entypo.scss */
+/* line 256, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Monitor:before {
   content: "\e8aa";
 }
-/* line 256, ../sass/strap/ui/icons/_entypo.scss */
+/* line 257, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Briefcase:before {
   content: "\e8ba";
 }
-/* line 257, ../sass/strap/ui/icons/_entypo.scss */
+/* line 258, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Floppy:before {
   content: "\e8cf";
 }
-/* line 258, ../sass/strap/ui/icons/_entypo.scss */
+/* line 259, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Cd:before {
   content: "\e8ad";
 }
-/* line 259, ../sass/strap/ui/icons/_entypo.scss */
+/* line 260, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Folder:before {
   content: "\e885";
 }
-/* line 260, ../sass/strap/ui/icons/_entypo.scss */
+/* line 261, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.DocText:before {
   content: "\e844";
 }
-/* line 261, ../sass/strap/ui/icons/_entypo.scss */
+/* line 262, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Calendar:before {
   content: "\e852";
 }
-/* line 262, ../sass/strap/ui/icons/_entypo.scss */
+/* line 263, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ChartLine:before {
   content: "\e8c4";
 }
-/* line 263, ../sass/strap/ui/icons/_entypo.scss */
+/* line 264, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ChartBar:before {
   content: "\e8c5";
 }
-/* line 264, ../sass/strap/ui/icons/_entypo.scss */
+/* line 265, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Clipboard:before {
   content: "\e8d0";
 }
-/* line 265, ../sass/strap/ui/icons/_entypo.scss */
+/* line 266, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Attach:before {
   content: "\e820";
 }
-/* line 266, ../sass/strap/ui/icons/_entypo.scss */
+/* line 267, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Bookmarks:before {
   content: "\e882";
 }
-/* line 267, ../sass/strap/ui/icons/_entypo.scss */
+/* line 268, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Book:before {
   content: "\e848";
 }
-/* line 268, ../sass/strap/ui/icons/_entypo.scss */
+/* line 269, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.BookOpen:before {
   content: "\e847";
 }
-/* line 269, ../sass/strap/ui/icons/_entypo.scss */
+/* line 270, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Phone:before {
   content: "\e84b";
 }
-/* line 270, ../sass/strap/ui/icons/_entypo.scss */
+/* line 271, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Megaphone:before {
   content: "\e8d1";
 }
-/* line 271, ../sass/strap/ui/icons/_entypo.scss */
+/* line 272, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Upload:before {
   content: "\e829";
 }
-/* line 272, ../sass/strap/ui/icons/_entypo.scss */
+/* line 273, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Download:before {
   content: "\e828";
 }
-/* line 273, ../sass/strap/ui/icons/_entypo.scss */
+/* line 274, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Box:before {
   content: "\e849";
 }
-/* line 274, ../sass/strap/ui/icons/_entypo.scss */
+/* line 275, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Newspaper:before {
   content: "\e846";
 }
-/* line 275, ../sass/strap/ui/icons/_entypo.scss */
+/* line 276, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Mobile:before {
   content: "\e8ab";
 }
-/* line 276, ../sass/strap/ui/icons/_entypo.scss */
+/* line 277, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Signal:before {
   content: "\e8a6";
 }
-/* line 277, ../sass/strap/ui/icons/_entypo.scss */
+/* line 278, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Camera:before {
   content: "\e80e";
 }
-/* line 278, ../sass/strap/ui/icons/_entypo.scss */
+/* line 279, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Shuffle:before {
   content: "\e893";
 }
-/* line 279, ../sass/strap/ui/icons/_entypo.scss */
+/* line 280, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Loop:before {
   content: "\e894";
 }
-/* line 280, ../sass/strap/ui/icons/_entypo.scss */
+/* line 281, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ArrowsCcw:before {
   content: "\e890";
 }
-/* line 281, ../sass/strap/ui/icons/_entypo.scss */
+/* line 282, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LightDown:before {
   content: "\e888";
 }
-/* line 282, ../sass/strap/ui/icons/_entypo.scss */
+/* line 283, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LightUp:before {
   content: "\e85b";
 }
-/* line 283, ../sass/strap/ui/icons/_entypo.scss */
+/* line 284, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Mute:before {
   content: "\e856";
 }
-/* line 284, ../sass/strap/ui/icons/_entypo.scss */
+/* line 285, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Sound:before {
   content: "\e857";
 }
-/* line 285, ../sass/strap/ui/icons/_entypo.scss */
+/* line 286, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Battery:before {
   content: "\e8a8";
 }
-/* line 286, ../sass/strap/ui/icons/_entypo.scss */
+/* line 287, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Search:before {
   content: "\e802";
 }
-/* line 287, ../sass/strap/ui/icons/_entypo.scss */
+/* line 288, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Key:before {
   content: "\e8d6";
 }
-/* line 288, ../sass/strap/ui/icons/_entypo.scss */
+/* line 289, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Lock:before {
   content: "\e821";
 }
-/* line 289, ../sass/strap/ui/icons/_entypo.scss */
+/* line 290, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.LockOpen:before {
   content: "\e822";
 }
-/* line 290, ../sass/strap/ui/icons/_entypo.scss */
+/* line 291, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Bell:before {
   content: "\e884";
 }
-/* line 291, ../sass/strap/ui/icons/_entypo.scss */
+/* line 292, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Bookmark:before {
   content: "\e881";
 }
-/* line 292, ../sass/strap/ui/icons/_entypo.scss */
+/* line 293, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Link:before {
   content: "\e81f";
 }
-/* line 293, ../sass/strap/ui/icons/_entypo.scss */
+/* line 294, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Back:before {
   content: "\e81d";
 }
-/* line 294, ../sass/strap/ui/icons/_entypo.scss */
+/* line 295, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Flashlight:before {
   content: "\e803";
 }
-/* line 295, ../sass/strap/ui/icons/_entypo.scss */
+/* line 296, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.ChartArea:before {
   content: "\e8c6";
 }
-/* line 296, ../sass/strap/ui/icons/_entypo.scss */
+/* line 297, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Clock:before {
   content: "\e859";
 }
-/* line 297, ../sass/strap/ui/icons/_entypo.scss */
+/* line 298, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Rocket:before {
   content: "\e8dc";
 }
-/* line 298, ../sass/strap/ui/icons/_entypo.scss */
+/* line 299, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo.Block:before {
   content: "\e85d";
 }
-/* line 300, ../sass/strap/ui/icons/_entypo.scss */
+/* line 301, ../sass/strap/ui/icons/_entypo.scss */
 .Entypo:before {
   width: 1em;
 }

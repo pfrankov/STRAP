@@ -12,14 +12,15 @@
 	@include clearfix;
 }
 
-
-
-@for $i from 1 through 10 {
-	.TopMargin-#{$i} {
-		margin-top: line($i);
-	}
-	.BottomMargin-#{$i} {
-		margin-bottom: line($i);
+// body is for overriding default margins
+body {
+	@for $i from 1 through 10 {
+		.TopMargin-#{$i} {
+			margin-top: line($i);
+		}
+		.BottomMargin-#{$i} {
+			margin-bottom: line($i);
+		}
 	}
 }
 
