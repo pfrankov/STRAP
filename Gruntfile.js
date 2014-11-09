@@ -16,15 +16,15 @@ module.exports = function(grunt) {
 			"includes/**",
 			"<%= config.sass %>/**",
 			"<%= config.images %>/**"
-		]
+		],
+		useSTRAPbanner: true
 	};
 
 
 
+	
 
-
-
-
+	
 
 
 
@@ -63,6 +63,15 @@ module.exports = function(grunt) {
 
 		
 
+		banner: "/*\n"+
+			"*   ------------------------------------------------\n"+
+			"*      [★] STRAP on Sass v1.0.1\n"+
+			"*      Compass responsive boilerplate + framework\n"+
+			"*   ------------------------------------------------\n"+
+			"*   Author: Pavel Frankov   twitter: @twenty\n"+
+			"*   Fork me on Github: https://github.com/pfrankov/strap\n"+
+			"*\n"+
+			"*/",
 
 
 		imagemin: {
@@ -116,11 +125,17 @@ module.exports = function(grunt) {
 						}],
 						css: [{
 							name: "concat",
-							createConfig: function(context){
+							createConfig: function(context, block){								
 								var copyTask = grunt.config("copy");
 								copyTask.assets.src = copyTask.assets.src.concat(makePathIgnored(context.inFiles));
 
 								grunt.config("copy", copyTask);
+
+
+								var usebannerTask = grunt.config("usebanner");
+								usebannerTask.banner.files.src = usebannerTask.banner.files.src.concat("<%= paths.dist %>/" + block.dest);
+
+								grunt.config("usebanner", usebannerTask);
 							}
 						}]
 					}
@@ -246,6 +261,31 @@ module.exports = function(grunt) {
 				createTag: false,
 				push: false
 			}
+		},
+
+		usebanner: {
+			banner: {
+				options: {
+					position: "top",
+					banner: "<%= banner %>",
+					linebreak: true
+				},
+				files: {
+					src: []
+				}
+			}
+		},
+		markdown: {
+			all: {
+				files: [
+					{
+						expand: true,
+						src: "*.md",
+						dest: "",
+						ext: ".html"
+					}
+				]
+			}
 		}
 	});
 
@@ -286,6 +326,11 @@ module.exports = function(grunt) {
 			"clean:tmp"
 		]);
 
+		if ( grunt.config.get("config" ).useSTRAPbanner ) {
+			grunt.task.run([
+				"usebanner"
+			]);
+		}
 		if ( grunt.config.get("config" ).zip ) {
 			grunt.task.run([
 				"zip"
