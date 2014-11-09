@@ -1,0 +1,55 @@
+// Default theme mixins
+// +public
+@mixin strap-ui-button ($base-color, $depth: 5px) {
+	border-radius: .3em;
+
+	$text-color: lighten($base-color, 70%);
+	$text-shadow-color: darken($base-color, 5%);
+
+	@if (lightness($base-color) > 50%) {
+		$text-color: darken($base-color, 40%);
+		$text-shadow-color: lighten($text-shadow-color, 15%);
+
+		text-shadow: $text-shadow-color 1px 1px 0;
+	}@else {
+		text-shadow: $text-shadow-color -1px -1px 0;
+	}
+
+
+
+	@include box-shadow(
+			shadow-steps(0, 1, darken($base-color, 10%), 0, $depth, false),
+			rgba(darken($base-color, 20%), 0) 0 2px $depth inset
+	);
+
+
+
+	transition: all .2s;
+
+	background: $base-color;
+	color: $text-color;
+	text-decoration: none;
+
+	&:hover {
+		background: lighten($base-color, 3%);
+		color: lighten($text-color, 5%);
+	}
+
+	&:active {
+		top: $depth;
+
+		@if (lightness($base-color) > 50%) {
+			text-shadow: darken($text-shadow-color, 10%) 1px 1px 0;
+		}@else {
+			text-shadow: lighten($text-shadow-color, 5%) -1px -1px 0;
+		}
+
+
+		@include box-shadow(
+				shadow-steps(0, 0, rgba($base-color, 0), 0, $depth, false),
+				rgba(darken($base-color, 20%), .5) 0 2px $depth inset
+		);
+		color: darken($text-color, 5%);
+		background: darken($base-color, 5%);
+	}
+}

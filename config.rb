@@ -2,11 +2,11 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "css"
-fonts_dir = "css/fonts"
-sass_dir = "sass"
-images_dir = "images"
-javascripts_dir = "js"
+css_dir = "app/styles"
+fonts_dir = "app/styles/fonts"
+sass_dir = "app/sass"
+images_dir = "app/images"
+javascripts_dir = "app/scripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
@@ -24,6 +24,7 @@ relative_assets = true
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 
+sourcemap = true
 
 # Make a copy of sprites with a name that has no uniqueness of the hash.
 on_sprite_saved do |filename|
@@ -32,3 +33,4 @@ on_sprite_saved do |filename|
     FileUtils.rm filename
   end
 end
+

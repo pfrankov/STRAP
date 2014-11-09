@@ -1,0 +1,13 @@
+// @required ui/buttons
+
+.Button {
+	&.Light {
+		@include strap-ui-button();
+	}
+	&.Dark {
+		@include strap-ui-button();
+	}
+	&.Medium {
+		@include strap-ui-button();
+	}
+}

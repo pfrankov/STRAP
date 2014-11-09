@@ -1,0 +1,60 @@
+//
+//  WARNING! Do not change anything in this file — this is only default constants
+//  If you override anything in this file or folder — you will not able to update STRAP.
+//
+
+$DEVELOPMENT: true; // true or false
+
+// FONTS
+$LINE_HEIGHT: 1.46; // only plain number
+
+$BASE_FONT_SIZE: 14px; // only pixels
+$BASE_LINE_HEIGHT: $BASE_FONT_SIZE*$LINE_HEIGHT; // only pixels
+
+$H1_FONT_SIZE: 2.7rem; // rem or px   38
+$H2_FONT_SIZE: 2.3rem; // rem or px   32
+$H3_FONT_SIZE: 1.7rem; // rem or px   24
+$H4_FONT_SIZE: 1.3rem; // rem or px   18
+$H5_FONT_SIZE: 1rem; // rem or px   16
+$H6_FONT_SIZE: 0.8rem; // rem or px   12
+
+$SMALL_FONT_SIZE: 0.8rem; // rem or px
+
+
+$MAIN_FONT_FAMILY: Arial, Helvetica, sans-serif;
+$HEADER_FONT_FAMILY: $MAIN_FONT_FAMILY;
+
+
+// COLORS
+$TEXT_COLOR: #000;
+
+$LINK_COLOR: #0167b3;
+$LINK_HOVER_COLOR: #dd1111;
+$LINK_ACTIVE_COLOR: $LINK_COLOR;
+$LINK_VISITED_COLOR: $LINK_COLOR;
+
+
+
+
+// BREAKPOINTS
+$BREAKPOINT_PHONE: 480px; // Maximum value
+$BREAKPOINT_PHONE_LANDSCAPE: 768px; // Maximum value
+$BREAKPOINT_TABLET: 960px; // Maximum value
+$BREAKPOINT_TABLET_LANDSCAPE: 1024px; // Maximum value
+
+
+
+
+// CONTENT
+$ANIMATION_TIME: .75s;
+
+
+// GRID
+$COLUMN_WIDTH: 60px; // px
+$GUTTER_WIDTH: 20px; // px
+$TOTAL_COLUMNS: 12;
+
+
+
+// DIRS AND FILES
+$SPRITES_DIR: "sprites"; // Starts from /images/

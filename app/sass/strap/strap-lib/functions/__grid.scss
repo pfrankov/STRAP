@@ -1,0 +1,88 @@
+// +public
+@function line ($lines:1, $font-size: $BASE_FONT_SIZE) {
+	@if ( relative-unit($font-size) ) {
+		$font-size: relative-to-px($font-size);
+	}
+
+	$line: multiple-of(($font-size * ($BASE_LINE_HEIGHT / $BASE_FONT_SIZE) / $BASE_LINE_HEIGHT) * $lines, 5, 2);
+
+	@return round($BASE_LINE_HEIGHT * remove-units($line));
+}
+
+@function rhythm ($lines: 1, $font-size: $BASE_FONT_SIZE, $offset: 0) {
+	//$rhythm: convert-length($lines * $BASE_LINE_HEIGHT - $offset, "em", $font-size);
+	//@if unit($rhythm) == px {
+	//	$rhythm: floor($rhythm);
+	//}
+	@return convert-length($lines * $BASE_LINE_HEIGHT - $offset, "em", $font-size);
+}
+
+// +public
+@function gutter ($number:1) {
+	@return $GUTTER_WIDTH * $number;
+}
+
+// +public
+@function calculate-content-width ($total-columns:$TOTAL_COLUMNS, $column-width: $COLUMN_WIDTH, $gutter-width: gutter()) {
+	@return $total-columns * ($column-width + $gutter-width) - $gutter-width;
+}
+
+// +public
+$content-width: calculate-content-width();
+
+// +public
+@function columns ($columns, $column-width: $COLUMN_WIDTH, $gutter-width: gutter()) {
+	@return $columns * $column-width + ($columns - 1) * $gutter-width;
+}
+
+
+
+
+
+
+
+// Breakpoints
+// -private
+@function _breakpoint-by-name ($name) {
+	@if $name == false {
+		@return false;
+	}
+	@if $name == phone {
+		@return $BREAKPOINT_PHONE;
+	}
+	@else if $name == (phone landscape) {
+		@return $BREAKPOINT_PHONE_LANDSCAPE;
+	}
+	@else if $name == tablet {
+		@return $BREAKPOINT_TABLET;
+	}
+	@else if $name == (tablet landscape) {
+		@return $BREAKPOINT_TABLET_LANDSCAPE;
+	}
+	@else if $name == content {
+		@return $content-width;
+	}
+}
+
+// Yes, there is no key—value arrays in Sass
+// -private
+@function _previous-breakpoint-by-name ($name) {
+	@if $name == false {
+		@return false;
+	}
+	@if $name == phone {
+		@return 0px;
+	}
+	@else if $name == (phone landscape) {
+		@return $BREAKPOINT_PHONE;
+	}
+	@else if $name == tablet {
+		@return $BREAKPOINT_PHONE_LANDSCAPE;
+	}
+	@else if $name == (tablet landscape) {
+		@return $BREAKPOINT_TABLET;
+	}
+	@else if $name == content {
+		@return $BREAKPOINT_TABLET_LANDSCAPE;
+	}
+}

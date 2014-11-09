@@ -1,0 +1,95 @@
+.Hidden,
+.Template,
+.More {
+	display: none;
+}
+
+
+.HighestDepth {
+	z-index: 999999 !important;
+}
+.Clearfix {
+	@include clearfix;
+}
+
+// body is for overriding default margins
+body {
+	@for $i from 1 through 10 {
+		.TopMargin-#{$i} {
+			margin-top: line($i);
+		}
+		.BottomMargin-#{$i} {
+			margin-bottom: line($i);
+		}
+	}
+}
+
+
+
+ul.NoStyle {
+	list-style: none;
+
+	&.All {
+		ul {
+			@extend ul.NoStyle;
+		}
+	}
+}
+
+ul.Horizontal {
+	@include clearfix;
+	padding: 0;
+	vertical-align: top;
+	margin: 0 0 line(-0.5) gutter(-1);
+
+	> li {
+		list-style: none;
+		display: inline-block;
+		margin: 0 0 line(0.5) gutter(1);
+	}
+
+	&.Center {
+		display: inline-block;
+	}
+	&.Right {
+		float: right;
+	}
+}
+
+ul.Justify {
+	@include clearfix;
+
+	margin-bottom: -1em;
+	text-align: justify;
+	text-justify: newspaper;
+
+	text-align-last: justify;
+
+	&:after {
+		width: 100%;
+		height: 0px;
+		visibility: hidden;
+		overflow: hidden;
+		content: "";
+		display: inline-block;
+
+	}
+
+	li  {
+		display: inline-block;
+		text-align: left;
+	}
+}
+
+.Sticky {
+
+	&.Clone {
+		visibility: hidden;
+	}
+
+	&.Stick {
+		position: fixed;
+		top: 0;
+	}
+}
+

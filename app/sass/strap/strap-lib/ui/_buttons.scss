@@ -1,0 +1,25 @@
+.Button {
+	display: inline-block;
+	position: relative;
+	padding: line(0.5) gutter(1);
+	line-height: rhythm(1);
+	text-align: center;
+	color: #fff;
+
+	&:active {
+		box-shadow: none;
+		color: rgba(255, 255, 255, .5);
+	}
+
+	
+	&[disabled] {
+		
+	}
+	&.Submit {
+		cursor: pointer;
+	}
+}
+
+a.Button {
+
+}

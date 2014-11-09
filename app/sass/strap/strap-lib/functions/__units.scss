@@ -1,0 +1,16 @@
+// Returns plain number without unit
+// +public
+@function remove-units($number-with-unit) {
+	@return ($number-with-unit / (($number-with-unit * 0) + 1));
+}
+
+// Converts em's and rem's to pixels.
+// +public
+@function relative-to-px ($size) {
+	@return ($BASE_FONT_SIZE * remove-units($size));
+}
+
+// +public
+@function relative-unit($number) {
+	@return unit($number) == "%" or unit($number) == "em" or unit($number) == "rem"
+}
