@@ -1,4 +1,4 @@
-app/**/*.map
+app/**/*.css.map
 node_modules
 dist
 .tmp
