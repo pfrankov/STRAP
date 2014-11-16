@@ -45,6 +45,7 @@ module.exports = function(grunt) {
 	}
 
 
+	require("time-grunt")(grunt);
 	grunt.initConfig({
 		pkg: grunt.file.readJSON("package.json"),
 
@@ -65,7 +66,7 @@ module.exports = function(grunt) {
 
 		banner: "/*\n"+
 			"*   ------------------------------------------------\n"+
-			"*      [★] STRAP on Sass v1.0.1\n"+
+			"*      [★] STRAP on Sass v1.0.2\n"+
 			"*      Compass responsive boilerplate + framework\n"+
 			"*   ------------------------------------------------\n"+
 			"*   Author: Pavel Frankov   twitter: @twenty\n"+
@@ -222,6 +223,7 @@ module.exports = function(grunt) {
 				files: ["<%= paths.scripts %>/**/*.js"],
 				tasks: ["build:dev:js"],
 				options: {
+					spawn: false,
 					livereload: true
 				}
 			},
@@ -229,18 +231,21 @@ module.exports = function(grunt) {
 				files: ["<%= paths.sass %>/**/*.scss"],
 				tasks: ["build:dev:css"],
 				options: {
+					spawn: false,
 					livereload: true
 				}
 			},
 			css: {
 				files: ["<%= paths.styles %>/**/*.css"],
 				options: {
+					spawn: false,
 					livereload: true
 				}
 			},
 			html: {
 				files: ["<%= paths.app %>/**/*.html"],
 				options: {
+					spawn: false,
 					livereload: true
 				}
 			}
@@ -298,7 +303,9 @@ module.exports = function(grunt) {
 		}
 	});
 
-	require('load-grunt-tasks')(grunt);
+	require("jit-grunt")(grunt, {
+		useminPrepare: "grunt-usemin"
+	});
 
 	grunt.registerTask("build:dev:css", [
 		"sass:tmp",
