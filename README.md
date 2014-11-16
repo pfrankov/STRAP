@@ -1,4 +1,4 @@
-#``[★]``STRAP on Sass
+#\[★\]STRAP on Sass
 ##Compass responsive boilerplate + framework v1.0.1
 
 ###Prerequirements:
@@ -6,16 +6,16 @@
 * [Ruby](https://www.ruby-lang.org) ([for Windows](http://rubyinstaller.org/))
 
 ####Grunt
-```
+```shell
 npm install -g grunt-cli
 ```
 ####Sass+Compass
-```
+```shell
 gem install compass
 ```
 ####Install all required packages
 In working directory:
-```
+```shell
 npm install
 ```
 

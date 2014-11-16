@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
 
 		copyIgnore: [
-			"bower-components/**",
+			"bower_components/**",
 			"includes/**",
 			"<%= config.sass %>/**",
 			"<%= config.images %>/**"
@@ -227,10 +227,19 @@ module.exports = function(grunt) {
 			},
 			sass: {
 				files: ["<%= paths.sass %>/**/*.scss"],
-				tasks: ["build:dev:css"]
+				tasks: ["build:dev:css"],
+				options: {
+					livereload: true
+				}
 			},
 			css: {
 				files: ["<%= paths.styles %>/**/*.css"],
+				options: {
+					livereload: true
+				}
+			},
+			html: {
+				files: ["<%= paths.app %>/**/*.html"],
 				options: {
 					livereload: true
 				}
@@ -293,8 +302,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask("build:dev:css", [
 		"sass:tmp",
-		"autoprefixer:tmp",
-		"clean:tmp"
+		"autoprefixer:tmp"
 	]);
 
 	grunt.registerTask("build:dev:js", [
@@ -305,6 +313,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask("default", [
 		"build:dev:css",
+		"build:dev:js",
 		"connect:livereload",
 		"watch"
 	]);
@@ -314,6 +323,7 @@ module.exports = function(grunt) {
 			"clean:dist",
 			"bump",
 			"build:dev:css",
+			"build:dev:js",
 			"useminPrepare",
 			"concat:generated",
 			"uglify:generated",
@@ -340,19 +350,5 @@ module.exports = function(grunt) {
 			"size_report"
 		]);
 	});
-
-
-
-	/*рисование треугольников
-	рисование плоских теней
-	анимации
-
-	sourcemaps
-	autoprefixer
-	избавиться от компаса (спрайты, ритм)
-	сборка билда
-	отладочная версия в браузере с авторефрешем
-	бамп версии*/
-
 };
 
