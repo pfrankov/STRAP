@@ -67,3 +67,11 @@ a {
 @include breakpoint (phone) {
 
 }
+
+.Icon {
+	@include sprite-dir ("browsers");
+
+	&.IE {
+		@include sprite-element("ie");
+	}
+}

@@ -4,9 +4,9 @@ module.exports = function(grunt) {
 
 		app: "app",
 		sass: "sass",
-		styles: "styles",
+		styles: "css",
 		images: "images",
-		scripts: "scripts",
+		scripts: "js",
 
 		dist: "dist",
 
@@ -172,19 +172,17 @@ module.exports = function(grunt) {
 			}
 		},
 
-		sass: {
+		compass: {
 			tmp: {
 				options: {
-					compass: true,
-					sourcemap: "file"
-				},
-				files: [{
-					expand: true,
-					cwd: "<%= paths.sass %>",
-					src: ["*.scss"],
-					dest: "<%= paths.tmp %>",
-					ext: ".css"
-				}]
+					sourcemap: true,
+					config: "config.rb",
+					imagesDir: "<%= paths.images %>",
+					javascriptsDir: "<%= paths.scripts %>",
+					fontsDir: "<%= paths.styles %>/fonts",
+					sassDir: "<%= paths.sass %>",
+					cssDir: "<%= paths.tmp %>"
+				}
 			}
 		},
 
@@ -307,7 +305,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask("build:dev:css", [
-		"sass:tmp",
+		"compass:tmp",
 		"autoprefixer:tmp"
 	]);
 
