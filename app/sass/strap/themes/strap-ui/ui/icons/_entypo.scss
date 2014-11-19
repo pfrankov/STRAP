@@ -1,8 +1,6 @@
-// @required ui/icons
-
 @include load-font("Entypo", "icons/entypo");
 
-.Entypo {
+.Icon.Entypo {
 	font-family: "Entypo";
 
 	speak: none;

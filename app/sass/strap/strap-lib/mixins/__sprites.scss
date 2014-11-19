@@ -12,13 +12,7 @@ $_sprite-file: "";
 //			@include sprite-background-position($_sprite, "<file-without-extension>", 100%, 0);
 //		}
 // +public
-
 @mixin sprite-dir($name, $sprites-dir: $SPRITES_DIR) {
-//	$_sprite: sprite-map(image-url($sprites-dir, true, false) + "/_"+$name+"/*.png", $spacing: 10px, $cleanup: false);
-//	$_sprite-file: image-url($sprites-dir, true, false) + "/" + $name + "-sprite.png";
-//
-//	$rendered-sprite: sprite-url($_sprite) no-repeat;
-
 	$_sprite: sprite-map($sprites-dir + "/_"+$name+"/*.png") !global;
 	$_sprite-file: image-url($sprites-dir, true, false) + "/" + $name + "-sprite.png" !global;
 

@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 	var config = {
-		zip: true, // Archive dist dir after build
+		zip: false, // Archive dist dir after build
 
 		app: "app",
 		sass: "sass",
@@ -39,13 +39,11 @@ module.exports = function(grunt) {
 		for (var i=0; i<paths.length; i++) {
 			result[i] = "!"+paths[i];
 		}
-		//console.log(result);
-
 		return result;
 	}
 
 
-	require("time-grunt")(grunt);
+	
 	grunt.initConfig({
 		pkg: grunt.file.readJSON("package.json"),
 
@@ -66,7 +64,7 @@ module.exports = function(grunt) {
 
 		banner: "/*\n"+
 			"*   ------------------------------------------------\n"+
-			"*      [★] STRAP on Sass v1.0.2\n"+
+			"*      [★] STRAP on Sass v2.0.0\n"+
 			"*      Compass responsive boilerplate + framework\n"+
 			"*   ------------------------------------------------\n"+
 			"*   Author: Pavel Frankov   twitter: @twenty\n"+
@@ -304,7 +302,8 @@ module.exports = function(grunt) {
 	});
 
 	require("jit-grunt")(grunt, {
-		useminPrepare: "grunt-usemin"
+		useminPrepare: "grunt-usemin",
+		usebanner: "grunt-banner"
 	});
 
 	grunt.registerTask("build:dev:css", [
@@ -325,7 +324,11 @@ module.exports = function(grunt) {
 		"watch"
 	]);
 
-	grunt.registerTask("build", function(){
+	grunt.registerTask("build", function(param){
+		if ( param == "debug" ) {
+			require("time-grunt")(grunt);
+		}
+		
 		grunt.task.run([
 			"clean:dist",
 			"bump",
@@ -355,7 +358,7 @@ module.exports = function(grunt) {
 		}
 		grunt.task.run([
 			"size_report"
-		]);
+		]);		
 	});
 };
 

@@ -2,17 +2,23 @@
 
 @import "strap/__init"; // Very important STRAP's initializing
 
-@import "strap/misc/normalize";
+@import "strap/strap-lib/misc/_normalize";
 
 // Other stuff
-@import "strap/ui/grid";
-@import "strap/ui/typography";
-@import "strap/ui/helpers";
+@import "strap/strap-lib/ui/_buttons";
+@import "strap/strap-lib/ui/_controls";
+@import "strap/strap-lib/ui/_forms";
+@import "strap/strap-lib/ui/_grid";
+@import "strap/strap-lib/ui/_typography";
+@import "strap/strap-lib/ui/_helpers";
+@import "strap/strap-lib/ui/_icons";
+@import "strap/strap-lib/ui/_tables";
 
-@import "strap/ui/tables";
 
-@import "strap/ui/icons";
-@import "strap/ui/icons/entypo";
+// You can import all theme
+@import "strap/themes/strap-ui/_init";
+// Or just some useful parts from theme
+@import "strap/themes/strap-ui/ui/icons/_entypo";
 
 
 
@@ -56,7 +62,7 @@ a {
 }
 
 @include breakpoint(phone landscape) {
-
+	
 }
 @include breakpoint (phone) {
 

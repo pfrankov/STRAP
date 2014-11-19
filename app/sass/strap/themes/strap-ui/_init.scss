@@ -1,10 +1,20 @@
 /////////////////////////////////////
-// Name:    STRAP UI v0.1
+// Name:    STRAP UI v1.0
 // Author:  Pavel Frankov
 //
-// Requires:    ui/buttons
 //
 // URL:     http://frankov.ru
 /////////////////////////////////////
 
-@import "ui/theme";
+@import "__mixins";
+
+@import "ui/_buttons";
+@import "ui/_controls";
+@import "ui/_forms";
+@import "ui/_grid";
+@import "ui/_helpers";
+@import "ui/_icons";
+@import "ui/_tables";
+@import "ui/_typography";
+
+@import "ui/icons/_entypo";

@@ -1,5 +1,5 @@
 #\[★\]STRAP on Sass
-##Compass responsive boilerplate + framework v1.0.2
+##Compass responsive boilerplate + framework v2.0.0
 
 ###Prerequirements:
 * [Node.js with npm](http://nodejs.org/)
