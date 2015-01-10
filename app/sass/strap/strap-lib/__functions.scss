@@ -54,26 +54,3 @@
 
 	@return $best-color;
 }
-
-// +public
-@function shadow-steps($x-offset-multiplier: 1, $y-offset-multiplier: 1, $color: #000, $size: 0, $depth: 1, $inset:false) {
-	$shadows-list: ();
-
-	$depth: remove-units($depth);
-	$x-offset-multiplier: remove-units($x-offset-multiplier);
-	$y-offset-multiplier: remove-units($y-offset-multiplier);
-
-	@if ( $inset ) {
-		$inset: inset;
-	}
-	@else {
-		$inset: unquote("");
-	}
-	@for $i from 1 through $depth {
-		$shadow: ($inset $i * $x-offset-multiplier *1px $i * $y-offset-multiplier *1px $size * 1px $color );
-
-		$shadows-list: append($shadows-list, $shadow, comma);
-	}
-
-	@return $shadows-list;
-}

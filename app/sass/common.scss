@@ -2,22 +2,8 @@
 
 @import "strap/__init"; // Very important STRAP's initializing
 
-@import "strap/strap-lib/misc/_normalize";
 
-// Other stuff
-@import "strap/strap-lib/ui/_buttons";
-@import "strap/strap-lib/ui/_controls";
-@import "strap/strap-lib/ui/_forms";
-@import "strap/strap-lib/ui/_grid";
-@import "strap/strap-lib/ui/_typography";
-@import "strap/strap-lib/ui/_helpers";
-@import "strap/strap-lib/ui/_icons";
-@import "strap/strap-lib/ui/_tables";
-
-
-// You can import all theme
-@import "strap/themes/strap-ui/_init";
-// Or just some useful parts from theme
+@import "strap/_imports";
 @import "strap/themes/strap-ui/ui/icons/_entypo";
 
 
@@ -66,12 +52,4 @@ a {
 }
 @include breakpoint (phone) {
 
-}
-
-.Icon {
-	@include sprite-dir ("browsers");
-
-	&.IE {
-		@include sprite-element("ie");
-	}
 }

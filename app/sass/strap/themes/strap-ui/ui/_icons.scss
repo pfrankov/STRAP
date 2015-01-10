@@ -2,8 +2,9 @@
 .Icon {
 	line-height: 1;
 	margin-right: gutter(0.25);
+	//@include sprite-dir("<file-without-extension>");
 
 	&.Tiny {
-		//@include sprite-file("<file-without-extension>");
+		//@include sprite-element("<file-without-extension>");
 	}
 }

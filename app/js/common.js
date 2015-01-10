@@ -1,8 +1,10 @@
+var test = 1;
+
 (function($){
 	if ( !$ ) {
 		return;
 	}
-
+	
 
 
 	$.fn.findNear = function ( selector ) {

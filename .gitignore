@@ -1,6 +1,8 @@
 app/**/*.css.map
+app/sass/*.css
+app/.tmp
+app/bower_components
 node_modules
 dist
 .tmp
 .sass-cache
-app/bower_components

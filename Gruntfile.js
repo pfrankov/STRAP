@@ -1,21 +1,26 @@
 module.exports = function(grunt) {
 	var config = {
-		zip: false, // Archive dist dir after build
+		zip: false, // Archive `dist` dir after build
 
+		// Directories names config
 		app: "app",
-		sass: "sass",
-		styles: "css",
-		images: "images",
-		scripts: "js",
+			sass: "sass",
+			styles: "css",
+			images: "images",
+			scripts: "js",
+			mocks: "mocks",
+		
+		test: "test",
 
 		dist: "dist",
 
 
+		// Ignore copying into `config.dist` from `config.app` directory
 		copyIgnore: [
 			"bower_components/**",
 			"includes/**",
 			"<%= config.sass %>/**",
-			"<%= config.images %>/**"
+			"<%= config.mocks %>/**" 
 		],
 		useSTRAPbanner: true
 	};
@@ -30,7 +35,6 @@ module.exports = function(grunt) {
 
 
 	/**
-	 *
 	 * @param {Array} paths
 	 */
 	function makePathIgnored (paths){
@@ -56,7 +60,9 @@ module.exports = function(grunt) {
 				scripts: "<%= config.app %>/<%= config.scripts %>",
 				images: "<%= config.app %>/<%= config.images %>",
 				tmp: "<%= config.app %>/.tmp",
+				mocks: "<%= config.app %>/<%= config.mocks %>",
 
+			test: "<%= config.test %>",
 			dist: "<%= config.dist %>"
 		},
 
@@ -64,7 +70,7 @@ module.exports = function(grunt) {
 
 		banner: "/*\n"+
 			"*   ------------------------------------------------\n"+
-			"*      [★] STRAP on Sass v2.0.0\n"+
+			"*      [★] STRAP on Sass v2.1.0\n"+
 			"*      Compass responsive boilerplate + framework\n"+
 			"*   ------------------------------------------------\n"+
 			"*   Author: Pavel Frankov   twitter: @twenty\n"+
@@ -78,7 +84,10 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: "<%= paths.app %>/",
-					src: ["<%= config.images %>/**/*.{png,jpg,gif}", "!<%= config.images %>/**/_*/**"],
+					src: [
+							"<%= config.images %>/**/*.{png,jpg,gif}", 
+							"!<%= config.images %>/**/_*/**"
+						].concat(makePathIgnored(config.copyIgnore) ),
 					dest: "<%= paths.dist %>/"
 				}]
 			}
@@ -167,7 +176,10 @@ module.exports = function(grunt) {
 			assets: {
 				expand: true,
 				cwd: "<%= paths.app %>/",
-				src: ["**/*", "!*.html"].concat(makePathIgnored(config.copyIgnore) ),
+				src: [
+						"**/*", "!*.html",
+						"!<%= config.images %>/**/_*/**"
+					].concat(makePathIgnored(config.copyIgnore) ),
 				dest: "<%= paths.dist %>/"
 			}
 		},
@@ -202,13 +214,38 @@ module.exports = function(grunt) {
 			options: {
 				port: 9000,
 				livereload: 35729,
-				hostname: "localhost"
+				hostname: "localhost",
+
+				middleware: function(connect, options, middlewares) {
+					middlewares.unshift(function(req, res, next) {
+						switch ( req.url ) {
+							case "/sample": {
+								res.end(grunt.file.read(
+									grunt.template.process("<%= paths.mocks %>/sample.json")
+								));
+								return;
+							}
+						}
+						
+
+						return next();
+					}); 
+
+					return middlewares;
+				}
 			},
 			livereload: {
 				options: {
 					open: true,
 					base: [
 						"<%= paths.app %>"
+					]
+				}
+			},
+			testDist: {
+				options: {
+					base: [
+						"<%= paths.dist %>"
 					]
 				}
 			}
@@ -244,7 +281,22 @@ module.exports = function(grunt) {
 					spawn: false,
 					livereload: true
 				}
+			},
+
+			test: {
+				files: ["<%= paths.test %>/spec/**/*.js", "<%= paths.scripts %>/**/*.js"],
+				tasks: ["karma:unit"],
+				options: {
+					spawn: true,
+					interval: 10
+				}
 			}
+		},
+		
+		focus: {
+			run: {
+				exclude: ["test"]
+			}	
 		},
 
 		size_report: {
@@ -296,6 +348,41 @@ module.exports = function(grunt) {
 					}
 				]
 			}
+		},
+		
+		karma: {
+			unit: {
+				options: {
+					configFile: "<%= paths.test %>/karma.conf.js",
+					files: [
+						// bower:js
+						"app/bower_components/jquery/dist/jquery.js",
+						// endbower
+						"<%= paths.scripts %>/**/*.js",
+						"<%= paths.test %>/spec/**/*.js"
+					]
+				}
+			},
+			dist: {
+				options: {
+					configFile: "<%= paths.test %>/karma.conf.js",
+					files: [
+						"<%= paths.dist %>/<%= config.scripts %>/ven*.js",
+						"<%= paths.dist %>/<%= config.scripts %>/*.js",
+						"<%= paths.test %>/spec/**/*.js"
+					]
+				}
+			}
+		},
+		wiredep: {
+			app: {
+				src: ["<%= paths.app %>/index.html"],
+				ignorePath:  /\.\.\//
+			},
+			gruntFile: {
+				src: ["Gruntfile.js"],
+				ignorePath:  /\.\.\//
+			}
 		}
 	});
 
@@ -310,16 +397,41 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask("build:dev:js", [
-
+		"wiredep"
 	]);
 
 
 
-	grunt.registerTask("default", [
-		"build:dev:css",
-		"build:dev:js",
-		"connect:livereload",
-		"watch"
+	grunt.registerTask("serve", function(param){
+		grunt.task.run([
+			"build:dev:css",
+			"build:dev:js",
+			"connect:livereload"
+		]);
+
+		if ( param == "test" ) {
+			grunt.task.run([
+				"karma:unit",
+				"watch"
+			]);
+		}
+
+		grunt.task.run([
+			"focus:run"
+		]);
+		
+	});
+
+
+	grunt.registerTask("server", [
+		"serve"
+	]);
+	
+	grunt.registerTask("build:js", [
+		"build:dev:js"
+	]);
+	grunt.registerTask("build:css", [
+		"build:dev:css"
 	]);
 
 	grunt.registerTask("build", function(param){
@@ -330,8 +442,8 @@ module.exports = function(grunt) {
 		grunt.task.run([
 			"clean:dist",
 			"bump",
-			"build:dev:css",
-			"build:dev:js",
+			"build:css",
+			"build:js",
 			"useminPrepare",
 			"concat:generated",
 			"uglify:generated",
@@ -341,6 +453,8 @@ module.exports = function(grunt) {
 			"usemin",
 			"imagemin",
 			"copy:assets",
+			"connect:testDist",
+			"karma:dist",
 			"clean:tmp"
 		]);
 
@@ -358,5 +472,7 @@ module.exports = function(grunt) {
 			"size_report"
 		]);		
 	});
+	
+	grunt.registerTask("default", ["build"]);
 };
 
