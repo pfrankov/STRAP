@@ -1,5 +1,7 @@
 #\[★\]STRAP on Sass
 ##Compass responsive boilerplate + framework v2.1.0
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
 
 ###Prerequirements:
 * [Node.js with npm](http://nodejs.org/)
