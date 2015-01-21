@@ -178,6 +178,7 @@ module.exports = function(grunt) {
 				cwd: "<%= paths.app %>/",
 				src: [
 						"**/*", "!*.html",
+						"!<%= config.images %>/**/*.{png,jpg,gif}",
 						"!<%= config.images %>/**/_*/**"
 					].concat(makePathIgnored(config.copyIgnore) ),
 				dest: "<%= paths.dist %>/"
@@ -450,8 +451,8 @@ module.exports = function(grunt) {
 			"csso:usemin",
 			"copy:usemin",
 			"copy:html",
-			"usemin",
 			"imagemin",
+			"usemin",
 			"copy:assets",
 			"connect:testDist",
 			"karma:dist",
